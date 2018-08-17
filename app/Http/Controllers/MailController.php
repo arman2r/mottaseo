@@ -32,8 +32,8 @@ class MailController extends Controller
 
             $m->to($user->email, $user->name)->subject('Your Reminder!');*/
 			/*$message->subject('Correo de contácto');*/
-			$message->from($data['email']);
-			$message->to('lex7601@gmail.com');
+			$message->from('arman.2.r@gmail.com');
+			$message->to($data['email']);
 			$message->replyTo($data['email']);
 		});	
 		

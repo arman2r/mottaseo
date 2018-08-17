@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'arman.2.r@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'armando'),
+        'address' => env('MAIL_FROM_ADDRESS', 'sebastiana2799@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'sebastian'),
     ],
 
     /*
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('lex7601@gmail.com'),
+    'username' => env('arman.2.r@gmail.com'),
 
-    'password' => env('Crapasmott76?'),
+    'password' => env('dnchblyxdbdpygyr'),
 
     /*
     |--------------------------------------------------------------------------
