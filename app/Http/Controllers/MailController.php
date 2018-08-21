@@ -2,7 +2,7 @@
 
 namespace seoGraphic\Http\Controllers;
 use Illuminate\Support\Facades\Input;
-use App\User;
+//use App\User;
 use Mail;
 use Session;
 use Redirect;
