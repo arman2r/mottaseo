@@ -17,7 +17,8 @@
     <meta property=og:image content=https://www.seographics.com.co/images/meta-logo.png alt="logo SEO Graphics" id="meta Logo SEOGraphics">
     <meta property=og:site_name content="SEOGraphics en bogotá, Neiva, Ibague, Colombia">
     <meta property=og:description content="SEOGraphics agencia de nuevas ideas para crecer">
-    <link rel=canonical href=https://www.seographics.com.co>	
+    <link rel=canonical href=https://www.seographics.com.co>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 
 
@@ -42,7 +43,7 @@
                                 <div class="h2" style="color: #323a45;">de Servicios y productos incrementando tus ganancias.</div>
                             </div>
                             <div class="tp-caption NotGeneric-Title  tp-resizeme rs-parallaxlevel-3" id="slide-3046-layer-5" data-x="left" data-hoffset="0" data-y="center" data-voffset="0" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[60]" data-fontsize="[90,56,40,30]" data-paddingleft="[0,50,50,50]" style="z-index: 9; white-space: nowrap;text-transform:left;">
-                                <div class="h1" style="color: #90c404;">Un buen sitio web 
+                                <div class="h1" style="color: #90c404;">Un buen sitio web
                                     <br>es la mejor presentación</div>
                             </div>
                             <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-2" id="slide-3046-layer-2" data-x="left" data-hoffset="0" data-y="center" data-voffset="140" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap;text-transform:left;">
@@ -86,34 +87,34 @@
                             <div>
                                 <a href="index.html#"><img src="images/tecnomusic.png" alt="tecnomusic" class="img-responsive center-block" /></a>
                             </div>
-                           
+
                             <div>
                                 <a href="index.html#"><img src="images/vidrioacero.png" alt="vidrioacero" class="img-responsive center-block" /></a>
                             </div>
-                           
+
                             <div>
                                 <a href="index.html#"><img src="images/pekaspizza.png" alt="pekas pizza" class="img-responsive center-block" /></a>
                             </div>
-                          
+
                             <div>
                                 <a href="index.html#"><img src="images/infihuila.png" alt="Infihuila" class="img-responsive center-block" /></a>
                             </div>
-                         
+
                             <div>
                                 <a href="index.html#"><img src="images/autocintas.png" alt="Autocintas" class="img-responsive center-block" /></a>
                             </div>
-                           
+
                             <div>
                                 <a href="index.html#"><img src="images/sulicam.png" alt="sulicam" class="img-responsive center-block" /></a>
                             </div>
-                           
+
                             <div>
                                 <a href="index.html#"><img src="images/amarres.png" alt="amarres" class="img-responsive center-block" /></a>
                             </div>
-                          
+
                             <div>
                                 <a href="index.html#"><img src="images/cuchiyuyo.png" alt="coramcuchiyuyo" class="img-responsive center-block" /></a>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +147,7 @@
                         <p align="justify">Cuando hablamos de sitios web que demoran a la hora de su carga y además no sé adaptan a todos los dispositivos tecnológicos, esto nos indica que es hora de hacer nuestro trabajo, el cual consiste en mejorar la carga y adaptación de un sitio en toda su estructura, esto no quiere decir que haremos un nuevo sitio web.</p>
                     </div>
                 </div>
-                
+
             </div>
             <div class="row margin-top-15">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -258,7 +259,7 @@
                                 <div class="form-element-wrapper">
                                     <h3>¿Quieres una cotización?</h3>
                                     <div class="form-group customised-formgroup"> <span class="icon-user"></span>
-                                        {{ Form::text('name', 'Nombre',(['class' => 'form-control', 'required' => 'true'])) }}
+                                        {{ Form::text('name', 'Nombre',(['id'=>'name', 'class' => 'form-control', 'required' => 'true'])) }}
                                         @if($errors->has('name'))
                                             <small class="form-text invalid-feedback">
                                                 {{ $errors->first('name') }}
@@ -266,7 +267,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group customised-formgroup"> <span class="icon-envelope"></span>
-                                        {{ Form::email('email', 'Email',(['class' => 'form-control', 'required' => 'required'])) }}
+                                        {{ Form::email('email', 'Email',(['id'=>'email', 'class' => 'form-control', 'required' => 'required'])) }}
                                         @if($errors->has('email'))
                                             <small class="form-text invalid-feedback">
                                                 {{ $errors->first('email') }}
@@ -274,13 +275,13 @@
                                         @endif
                                     </div>
                                     <div class="form-group customised-formgroup"> <span class="icon-telephone"></span>
-                                        {{ Form::tel('movil', 'Móvil',(['class' => 'form-control', 'required' => 'required'])) }}                                        
+                                        {{ Form::tel('movil', 'Móvil',(['id'=>'movil', 'class' => 'form-control', 'required' => 'required'])) }}
                                     </div>
                                     <div class="form-group customised-formgroup"> <span class="icon-laptop"></span>
-                                        {{ Form::text('website', 'Website',(['class' => 'form-control'])) }}                                        
+                                        {{ Form::text('website', 'Website',(['id'=>'website', 'class' => 'form-control'])) }}
                                     </div>
                                     <div class="form-group customised-formgroup"> <span class="icon-bubble"></span>
-                                        {{ Form::textarea('comment', 'Mensaje',(['class' => 'form-control', 'required' => 'required'])) }}
+                                        {{ Form::textarea('comment', 'Mensaje',(['id'=>'comment', 'class' => 'form-control', 'required' => 'required'])) }}
                                         @if($errors->has('comment'))
                                             <small class="form-text invalid-feedback">
                                                 {{ $errors->first('comment') }}
@@ -292,11 +293,11 @@
                                         <!--<button type="submit" class="btn btn-fill full-width"> Si la Quiero <span class="icon-chevron-right"></span></button>-->
                                     </div>
                                 </div>
-                                @if(Session::has('message')) 
-                                    {{Session::get('message')}} 
+                                @if(Session::has('message'))
+                                    {{Session::get('message')}}
                                 @endif
                             {!! Form::close() !!}
-                       
+
                             <!--
                           <form class="email_form" action="email.php" method="post">
                             <div class="form-element-wrapper">
@@ -337,29 +338,30 @@
                 <div class="stuff" data-type="content">
                     <div class="container">
                         <h2>Éxito en los números</h2>
-                          <div class="row counter-inner">
-                           <div class="col-md-4 col-sm-4 col-xs-4">
-                                <div class="icon-holder pull-left"><span class="icon-users2"></span></div>
-                                <div class="pull-left counter-text">
-                                    <div class="counter no_count b-clor">60</div>
-                                    <p class="semi-bold">Clientes felices</p>
+                            <div class="row counter-inner">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <div class="icon-holder pull-left"><span class="icon-users2"></span></div>
+                                    <div class="pull-left counter-text">
+                                        <div class="counter no_count b-clor">60</div>
+                                        <p class="semi-bold">Clientes felices</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <div class="icon-holder pull-left"><span class="icon-calendar-check"></span></div>
+                                    <div class="pull-left counter-text">
+                                        <div class="counter no_count b-clor">100</div>
+                                        <p class="semi-bold">Proyectos completados</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <div class="icon-holder pull-left"><span class="icon-clock"></span></div>
+                                    <div class="pull-left counter-text">
+                                        <div class="counter no_count b-clor">24,100</div>
+                                        <p class="semi-bold">Horas trabajadas</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xs-4">
-                                <div class="icon-holder pull-left"><span class="icon-calendar-check"></span></div>
-                                <div class="pull-left counter-text">
-                                    <div class="counter no_count b-clor">100</div>
-                                    <p class="semi-bold">Proyectos completados</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-4">
-                                <div class="icon-holder pull-left"><span class="icon-clock"></span></div>
-                                <div class="pull-left counter-text">
-                                    <div class="counter no_count b-clor">24,100</div>
-                                    <p class="semi-bold">Horas trabajadas</p>
-                                </div>
-                            </div>
-                           </div>
+                        </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -375,4 +377,29 @@
 
 @section('scripts')
     @parent
+
+    <script>
+        $(document).ready(function () {
+            var form = $('.emailform');
+
+            /*console.log(form.serialize());*/
+
+            form.submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: "{{ route('contacto.store') }}",
+                    method: 'POST',
+                    data: form.serialize(),
+                    dataType: 'json',
+                    success: function(data) {
+                        alert('success');
+                    },
+                    error: function(data) {
+                        alert('error');
+                    }
+                });
+            });
+        });
+    </script>
 @endsection

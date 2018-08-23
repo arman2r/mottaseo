@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/artesgraficas', function () {
+    return view('artesgraficas');
+});
+
 /*Route::get('/', 'Controller@home')->name('index');*/
 /*Route::resource('mail', 'MailController');*/
 /*Route::resource('mail', 'MailController');*/
@@ -24,6 +28,7 @@ Route::get('/', function () {
 Route::get('/contacto', [
     'uses' => 'MailController@create'
 ]);
+
 
 Route::post('/contacto', [
     'uses' => 'MailController@store',

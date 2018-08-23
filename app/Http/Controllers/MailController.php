@@ -31,7 +31,8 @@ class MailController extends Controller
         ], function($mail) use($request) {
             $mail->from($request->email);
 
-            $mail->to('lex7601@gmail.com')->subject('Contact Message');
+            $mail->to('arman.2.r@gmail.com')->subject('Contact Message');
+            
         });
 
         return redirect()->back()->with('flash_message', 'Gracias por contar con nosotros.');

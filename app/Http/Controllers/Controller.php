@@ -16,4 +16,10 @@ class Controller extends BaseController
         return view('index');
     
     }
+
+    public function artesgraficas(){
+
+        return view('artesgraficas');
+    
+    }
 }

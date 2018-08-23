@@ -73,7 +73,7 @@
 
 <body>
     @section('header')
-    <div class="header-wrapper">
+    <!--<div class="header-wrapper">-->
         <nav id="navbar-main" class="navbar main-menu">
             <div class="container">
                 <div class="navbar-header">
@@ -101,7 +101,7 @@
                 </div>
             </div>
         </nav>
-    </div>
+    <!--</div>-->
     @show
     <div class="row">
         @yield('content')
