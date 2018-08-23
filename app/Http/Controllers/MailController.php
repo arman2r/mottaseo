@@ -35,6 +35,12 @@ class MailController extends Controller
             
         });
 
-        return redirect()->back()->with('flash_message', 'Gracias por contar con nosotros.');
+        $response = array(
+            'status' => 'success',
+            'msg' => 'Setting created successfully',
+        );
+        return \Response::json($response);
+
+        /*return redirect()->back()->with('flash_message', 'Gracias por contar con nosotros.');*/
     }
 }

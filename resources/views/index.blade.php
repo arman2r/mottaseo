@@ -28,6 +28,30 @@
 
 @section('css')
     @parent
+    <style>
+        form label 				 {
+            color:#999 !important; 
+            font-size:14px !important;
+            font-weight:normal !important;
+            position:absolute !important;
+            pointer-events:none !important;
+            left:24px !important;
+            top:18px !important;
+            transition:0.2s ease all !important; 
+            -moz-transition:0.2s ease all !important; 
+            -webkit-transition:0.2s ease all !important;
+        }
+
+            /* active state */
+        form input:focus ~ label, form input:valid ~ label,
+        form textarea:focus ~ label, form textarea:valid ~ label {
+            top:-5px !important;
+            font-size:12px !important;
+            color:#1a252b !important;
+        }
+
+       
+    </style>
 @endsection
 
 @section('content')
@@ -258,8 +282,9 @@
                                 {{ csrf_field() }}
                                 <div class="form-element-wrapper">
                                     <h3>¿Quieres una cotización?</h3>
-                                    <div class="form-group customised-formgroup"> <span class="icon-user"></span>
-                                        {{ Form::text('name', 'Nombre',(['id'=>'name', 'class' => 'form-control', 'required' => 'true'])) }}
+                                    <div class="form-group customised-formgroup"> <span class="icon-user"></span>                                        
+                                        {{ Form::text('name',null,(['id'=>'name', 'class' => 'form-control', 'required' => 'true'])) }}
+                                        {{ Form::label( 'name', 'nombres*:') }}
                                         @if($errors->has('name'))
                                             <small class="form-text invalid-feedback">
                                                 {{ $errors->first('name') }}
@@ -267,7 +292,8 @@
                                         @endif
                                     </div>
                                     <div class="form-group customised-formgroup"> <span class="icon-envelope"></span>
-                                        {{ Form::email('email', 'Email',(['id'=>'email', 'class' => 'form-control', 'required' => 'required'])) }}
+                                        {{ Form::email('email', null,(['id'=>'email', 'class' => 'form-control', 'required' => 'true'])) }}
+                                        {{ Form::label( 'email', 'Email*:') }}
                                         @if($errors->has('email'))
                                             <small class="form-text invalid-feedback">
                                                 {{ $errors->first('email') }}
@@ -275,13 +301,16 @@
                                         @endif
                                     </div>
                                     <div class="form-group customised-formgroup"> <span class="icon-telephone"></span>
-                                        {{ Form::tel('movil', 'Móvil',(['id'=>'movil', 'class' => 'form-control', 'required' => 'required'])) }}
+                                        {{ Form::tel('movil', null,(['id'=>'movil', 'class' => 'form-control', 'required' => 'true'])) }}
+                                        {{ Form::label( 'movil', 'Movil*:') }}
                                     </div>
                                     <div class="form-group customised-formgroup"> <span class="icon-laptop"></span>
-                                        {{ Form::text('website', 'Website',(['id'=>'website', 'class' => 'form-control'])) }}
+                                        {{ Form::text('website', null,(['id'=>'website', 'class' => 'form-control', 'required' => 'true'])) }}
+                                        {{ Form::label('website', 'Website:') }}
                                     </div>
                                     <div class="form-group customised-formgroup"> <span class="icon-bubble"></span>
-                                        {{ Form::textarea('comment', 'Mensaje',(['id'=>'comment', 'class' => 'form-control', 'required' => 'required'])) }}
+                                        {{ Form::textarea('comment', null,(['id'=>'comment', 'class' => 'form-control', 'required' => 'required'])) }}
+                                        {{ Form::label('comment', 'Mensaje*:') }}
                                         @if($errors->has('comment'))
                                             <small class="form-text invalid-feedback">
                                                 {{ $errors->first('comment') }}
@@ -383,22 +412,50 @@
             var form = $('.emailform');
 
             /*console.log(form.serialize());*/
-
+           
+            
             form.submit(function(e) {
                 e.preventDefault();
-
-                $.ajax({
-                    url: "{{ route('contacto.store') }}",
-                    method: 'POST',
-                    data: form.serialize(),
-                    dataType: 'json',
-                    success: function(data) {
-                        alert('success');
-                    },
-                    error: function(data) {
-                        alert('error');
-                    }
-                });
+                
+                var a = $("input[name='name']").val();
+                var b = $("input[name='email']").val();
+                var c = $("input[name='movil']").val();
+                var d = $("input[name='website']").val();
+                var e = $("textarea[name='comment']").val();
+                var myObj = [ a , b, c, d, e ];
+                //myObj[0].push("name");                       
+                
+                /*
+                if (a==null || a=="",b==null || b=="",c==null || c=="",d==null || d=="", e==null || e=="")
+                {                
+                    
+                    $(form).append('<div class="alert alert-warning" role="alert">Por favor complete todos los campos :/ </div>');    
+                    setTimeout(function() {
+                        $(form).children('.alert').remove();    
+                    }, 3000);
+                    return false;
+                }*/
+                if(!$(form).valid()){
+                    return
+                }
+                else{
+                    $.ajax({
+                        url: "{{ route('contacto.store') }}",
+                        method: 'POST',
+                        data: form.serialize(),
+                        dataType: 'json',
+                        success: function(msg) {
+                            $(form).append('<div class="alert alert-success" role="alert">Gracias por contactarnos :)</div>');    
+                            setTimeout(function() {
+                                $(form).children('.alert').remove();    
+                            }, 3000);
+                            
+                        },
+                        error: function(msg) {
+                            $(form).append('<div class="alert alert-danger" role="alert">Su mensaje no fue enviado, intente mas tarde.</div>')
+                        }
+                    });
+                }
             });
         });
     </script>
