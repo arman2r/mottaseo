@@ -68,6 +68,30 @@
     <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    <style>
+        form label 				 {
+            color:#999 !important; 
+            font-size:14px !important;
+            font-weight:normal !important;
+            position:absolute !important;
+            pointer-events:none !important;
+            left:24px !important;
+            top:18px !important;
+            transition:0.2s ease all !important; 
+            -moz-transition:0.2s ease all !important; 
+            -webkit-transition:0.2s ease all !important;
+        }
+
+            /* active state */
+        form input:focus ~ label, form input:valid ~ label,
+        form textarea:focus ~ label, form textarea:valid ~ label {
+            top:-5px !important;
+            font-size:12px !important;
+            color:#1a252b !important;
+        }
+
+       
+    </style>
     @show
 </head>
 
@@ -78,25 +102,25 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo agencia" class="img-responsive"/></a>
+                    <a class="navbar-brand" href="{{ route('home') }}"><img src="images/logo.png" alt="logo agencia" class="img-responsive"/></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown"><a href="index.html#" data-toggle="dropdown" class="dropdown-toggle">Servicios</a>
                             <ul class="dropdown-menu">
-                                <li><a href="artesgraficas.html"><span class=" icon icon-pencil"></span>Artes gráficas</a></li>
-                                <li><a href="disenoweb.html" class="b-clor"><span class="icon-laptop-phone"></span>Diseño Web</a></li>
-                                <li><a href="optimiza.html"><span class="icon-puzzle"></span>Optimización Web</a></li>
-                                <li><a href="seo.html"><span class="icon-magnifier"></span>Posicionaminto SEO</a></li>
-                                <li><a href="pagoxclic.html"><span class="icon-select2"></span>Pago por clic</a></li>
-                                <li><a href="socialmedia.html"><span class="icon-share"></span>Marketing de medios sociales</a></li>
+                                <li><a href="{{ route('artesgraficas') }}"><span class=" icon icon-pencil"></span>Artes gráficas</a></li>
+                                <li><a href="{{ route('disenoweb') }}" class="b-clor"><span class="icon-laptop-phone"></span>Diseño Web</a></li>
+                                <li><a href="{{ route('optimizar') }}"><span class="icon-puzzle"></span>Optimización Web</a></li>
+                                <li><a href="{{ route('seo') }}"><span class="icon-magnifier"></span>Posicionaminto SEO</a></li>
+                                <li><a href="{{ route('pagoxclic') }}"><span class="icon-select2"></span>Pago por clic</a></li>
+                                <li><a href="{{ route('socialmedia') }}"><span class="icon-share"></span>Marketing de medios sociales</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Portafolio</a></li>
-                        <li><a href="">Casos de Éxitos</a></li>
-                        <li><a href="">SEOGraphics</a></li>
+                        <li><a href="{{ route('portafolio') }}">Portafolio</a></li>
+                        <li><a href="{{ route('casosexito') }}">Casos de Éxitos</a></li>
+                        <li><a href="{{ route('nosotros') }}">SEOGraphics</a></li>
                         <li class="dropdown"><a href="" data-toggle="dropdown">Blog</a></li>
-                        <li class="btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal"><a href="contacto.html">Contáctenos<span class="icon-chevron-right"></span></a></li>
+                        <li class="btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -113,25 +137,33 @@
                 <div class="container">
                     <h2>¡Suscríbete a nuestro boletín para mantenerte al día con las novedades tecnológicas!</h2>
                     <div class="customise-form">
-                        <form>
+                        <!--<form>-->
+                        {!! Form::open(['route' => 'newsletter.store', 'method' => 'POST', 'class' => 'emailform', 'id'=>'newsletterform']) !!}
+                        {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="form-group customised-formgroup"> <span class="icon-user"></span>
-                                        <input class="form-control" placeholder="Nombre">
+                                        {{ Form::text('name',null,(['id'=>'name', 'class' => 'form-control'])) }}
+                                        {{ Form::label( 'name', 'nombres*:') }}
+                                        <!--<input class="form-control" placeholder="Nombre">-->
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="form-group customised-formgroup"> <span class="icon-envelope"></span>
-                                        <input class="form-control" placeholder="Email">
+                                        {{ Form::email('email', null,(['id'=>'email', 'class' => 'form-control'])) }}
+                                        {{ Form::label( 'email', 'Email*:') }}
+                                        <!--<input class="form-control" placeholder="Email">-->
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div>
-                                        <input class="btn btn-fill full-width" type="submit" value="REGISTRATE GRATIS!" />
+                                        <!--<input class="btn btn-fill full-width" type="submit" value="REGISTRATE GRATIS!" />-->
+                                        {!!Form::submit('REGISTRATE GRATIS!', array('class' => 'btn btn-fill full-width btnsendemail')) !!}
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        {!! Form::close() !!}
+                        <!--</form>-->
                         <p class="light-gray-font-color">Confía en nosotros y sea uno de los primeros en conocer nuestras noticias, ideas, actualizaciones y<br> últimas características.</p>
                     </div>
                 </div>
@@ -280,7 +312,108 @@
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            
+            var form = $('.sendmailcontact');
+            
+            console.log(form);
 
+            form.submit(function(e) {                
+                e.preventDefault();
+
+                var a = $("input[name='name']").val();
+                var b = $("input[name='email']").val();
+                var c = $("input[name='movil']").val();
+                var d = $("input[name='website']").val();
+                var e = $("textarea[name='comment']").val();
+                var myObj = [a, b, c, d, e];
+                //myObj[0].push("name");                       
+
+                $(form).find("input[type='submit']").addClass('disabled');
+
+                if (a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == "", e == null || e == "") {
+                    $(form).append('<div class="alert alert-warning" role="alert">Por favor complete todos los campos :/ </div>');
+                    setTimeout(function () {
+                        $(form).children('.alert').remove();
+                    }, 3000);
+                    return false;
+                }
+                /*
+                if(!$(form).valid()){
+                    return
+                }*/
+                else {
+                    $.ajax({
+                        url: "{{ route('contacto.store') }}",
+                        method: 'POST',
+                        data: form.serialize(),
+                        dataType: 'json',
+                        success: function (msg) {
+                            $(form).find("input[type='text'], input[type='tel'], input[type='email'], textarea").val("").attr('disabled', true);
+                            $(form).append('<div class="alert alert-success" role="alert">Gracias por contactarnos :)</div>');
+                            setTimeout(function () {
+                                $(form).children('.alert').remove();
+                                $(form).find("input[type='submit']").removeClass('disabled');
+                                $(form).find("input[type='text'], input[type='tel'], input[type='email'], textarea").removeAttr('disabled');
+                            }, 3000);
+
+                        },
+                        error: function (msg) {
+                            $(form).append('<div class="alert alert-danger" role="alert">Su mensaje no fue enviado, intente mas tarde.</div>')
+                        }
+                    });
+                }
+            });
+
+            /*var newsForm = $('#newsletterform');
+
+            newsForm.submit(function(e) {
+                e.preventDefault();
+
+                var n = $("#newsletterform input[name='name']").val();
+                var r = $("#newsletterform input[name='email']").val();
+                
+                //var myObj = [a, b, c, d, e];
+                //myObj[0].push("name");
+
+                $(newsForm).find("input[type='submit']").addClass('disabled');
+
+                if (n == null || n == "", r == null || r == "") {
+                    $(newsForm).append('<div class="alert alert-warning" role="alert">Por favor complete todos los campos :/ </div>');
+                    setTimeout(function () {
+                        $(newsForm).children('.alert').remove();
+                    }, 3000);
+                    return false;
+                }
+                /*
+                if(!$(form).valid()){
+                    return
+        }*//*
+                else {
+                    $.ajax({
+                        url: "{{ route('newsletter.store') }}",
+                        method: 'POST',
+                        data: newsForm.serialize(),
+                        dataType: 'json',
+                        success: function (msg) {
+                            $(newsForm).find("input[type='text'], input[type='email']").val("").attr('disabled', true);
+                            $(newsForm).append('<div class="alert alert-success" role="alert">Gracias por contactarnos :)</div>');
+                            setTimeout(function () {
+                                $(newsForm).children('.alert').remove();
+                                $(newsForm).find("input[type='submit']").removeClass('disabled');
+                                $(newsForm).find("input[type='text'], input[type='email']").removeAttr('disabled');
+                            }, 3000);
+
+                        },
+                        error: function (msg) {
+                            $(newsForm).append('<div class="alert alert-danger" role="alert">Su mensaje no fue enviado, intente mas tarde.</div>')
+                        }
+                    });
+                }
+            });*/
+        });
+        </script>
         
     @show
 </body>

@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-    agencia de nuevas ideas para crecer
+Artes gráficas la mejor forma de comunicarte con tus clientes.
 @endsection
 
 @section('head')
@@ -10,13 +10,20 @@
 
 @section('head')
     @parent
-	<meta name="description" content="SEOGraphics es una agencia de optimización, posicionamiento, diseño y desarrollos web ">
-    <meta name="keywords" content="SEO, seo, diseño, diseño web,">
-    <meta property=og:title content="SEOGraphics, Optimización y Posicionamiento web.">
-    <meta property=og:url content=https://www.seographics.com.co>
-    <meta property=og:image content=https://www.seographics.com.co/images/meta-logo.png alt="logo SEO Graphics" id="meta Logo SEOGraphics">
-    <meta property=og:site_name content="SEOGraphics en bogotá, Neiva, Ibague, Colombia">
-    <meta property=og:description content="SEOGraphics agencia de nuevas ideas para crecer">
+	<meta name="description" content="En SEOgraphics tenemos un grupo de personas con la mejor experiencia en artes gráficas los cuales están la tu disposición a la hora que hacer o cambiar la imagen corporativa de ti negocio o empresa.">
+    <meta name="keywords" content="Tarjetas, pendones, camisetas, pancartas, papelería empresarial, rivistas, catalogos.">
+    <meta property=og:title content=" Artes gráficas la mejor forma de comunicarte.">
+    <meta property=og:type content=website>
+    <meta property=og:url content=https://www.seographics.com.co/artesgraficas.html>
+    <meta property=og:image content=https://www.seographics.com.co/images/metaartes.jpg alt="logo SEOGraphics" id="meta Logo SEOGraphics">
+    <meta property=og:site_name content="Artes Graficas la mejor forma de comunicar">
+    <meta property=og:description content="SEOgraphics tenemos experiencia en artes gráficas">
+    <meta property="fb:admins" content="834441610022571">
+    <meta property="fb:app_id" content="470450446638168">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://twitter.com/seographics">
+    <meta name="twitter:creator" content="@seographics">
+    <link rel="alternate" href="https://www.seographics.com.co/es-co" hreflang="es-co" />
     <link rel=canonical href=https://www.seographics.com.co>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
@@ -55,8 +62,12 @@
                     </ul>
                     <p class="regular-text"align="justify" >Para SEOGraphics es de suma importancia el poder ayudarte en tu proceso, ya que nuestra experiencia en diseño de piezas gráficas es de más de 12 años garantizándote que lo que dejes en nuestras manos será una de las piezas más novedosas que tendrás, así que permítenos trabajar para ti. </p>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"> </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"> </div>                            
+                
                 <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                    @include('contactform')
+                        
+                    <!--
                     <div class="customise-form">
                         <form class="email_form" action="email.php" method="post">
                             <div class="form-element-wrapper">
@@ -82,7 +93,9 @@
                             </div>
                         </form>
                     </div>
+                    -->
                 </div>
+                
             </div>
         </div>
     </section>
@@ -227,29 +240,25 @@
 
 @section('scripts')
     @parent
-
-    <script>
-        $(document).ready(function () {
-            var form = $('.emailform');
-
-            /*console.log(form.serialize());*/
-
-            form.submit(function(e) {
-                e.preventDefault();
-
-                $.ajax({
-                    url: "{{ route('contacto.store') }}",
-                    method: 'POST',
-                    data: form.serialize(),
-                    dataType: 'json',
-                    success: function(data) {
-                        alert('success');
-                    },
-                    error: function(data) {
-                        alert('error');
-                    }
-                });
-            });
-        });
-    </script>
+    <script type=application/ld+json>
+    {
+    "@context":"http://www.schema.org",
+    "@type":"LocalBusiness",
+    "image":"https://www.seographics.com.co/images/metaartes.jpg",
+    "name":"SEOGaphics",
+    "url":"https://seographics.com.co/artesgraficas.html",
+    "telephone":"+57 3192948824",
+    "logo":"https://seographics.com.co/images/logo.png",
+    "description":"¡Sobresalir entre la multitud!\nSabemos que los clientes siempre tendrán una imagen de tu negocio y esto lo lograrás con una buena identidad corporativa que hable por sí solo de tu empresa, ya que te destacará entre muchas de las marcas del sector, al tener una buena identidad corporativa te dará prestigio y de fácil recordación a los clientes, los cuales siempre tendrán presente a la hora de adquirir tus productos o servicios.",
+    "priceRange":"$$$","address":{"@type":"PostalAddress","streetAddress":"Carrera 46 # 137 - 32 Bogotá, Colombia ","addressLocality":"bogota",
+    "addressRegion":"Cundinamarca",
+    "postalCode":"111111",
+    "addressCountry":"Colombia"},
+    "geo":{"@type":"GeoCoordinates",
+    "latitude":"4.722963","longitude":"-74.052821"},
+    "openingHours":"Mo, Tu, We, Th, Fr 09:00-20:00 Sa 09:00-14:00",
+    "contactPoint":{"@type":"ContactPoint",
+    "telephone":"+57 3192948834","contactType":"sales"},
+    "aggregateRating":{"@type":"AggregateRating",
+    "ratingValue":"4.8","ratingCount":"95"}}</script>
 @endsection

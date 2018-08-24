@@ -21,37 +21,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 
-
-@section('scripts')
-    @parent
-@endsection
-
 @section('css')
-    @parent
-    <style>
-        form label 				 {
-            color:#999 !important; 
-            font-size:14px !important;
-            font-weight:normal !important;
-            position:absolute !important;
-            pointer-events:none !important;
-            left:24px !important;
-            top:18px !important;
-            transition:0.2s ease all !important; 
-            -moz-transition:0.2s ease all !important; 
-            -webkit-transition:0.2s ease all !important;
-        }
-
-            /* active state */
-        form input:focus ~ label, form input:valid ~ label,
-        form textarea:focus ~ label, form textarea:valid ~ label {
-            top:-5px !important;
-            font-size:12px !important;
-            color:#1a252b !important;
-        }
-
-       
-    </style>
+    @parent    
 @endsection
 
 @section('content')
@@ -273,87 +244,11 @@
                     <p class="regular-text" align="justify">Lo más importante de cada proyecto que iniciamos es lograr el crecimiento empresarial de cada uno de nuestros clientes, ya que nuestro trabajo es dar a los medios digitales y motores de búsqueda las mejores razones que estas exigen, no es solo imágenes y un gran textos que impacte a los usuarios de un sitio web, la verdad es mucho más profundo nuestro trabajo, ya que nuestro punto de partida es desde el código del sitio web hasta llegar a las redes sociales e integrar todo en un conjunto de armonía digital para dar un gran valor comercial y lograr así las ganancias que tanto esperas. </p>
                 </div>
                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"> </div>
+               
                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
-                    <div class="customise-form">
-                            @if(Session::has('flash_message'))
-                                <div class="alert alert-succes">{{ Session::get('flash_message') }}</div>
-                            @endif
-                            {!! Form::open(['route' => 'contacto.store', 'method' => 'POST', 'class' => 'emailform']) !!}
-                                {{ csrf_field() }}
-                                <div class="form-element-wrapper">
-                                    <h3>¿Quieres una cotización?</h3>
-                                    <div class="form-group customised-formgroup"> <span class="icon-user"></span>                                        
-                                        {{ Form::text('name',null,(['id'=>'name', 'class' => 'form-control', 'required' => 'true'])) }}
-                                        {{ Form::label( 'name', 'nombres*:') }}
-                                        @if($errors->has('name'))
-                                            <small class="form-text invalid-feedback">
-                                                {{ $errors->first('name') }}
-                                            </small>
-                                        @endif
-                                    </div>
-                                    <div class="form-group customised-formgroup"> <span class="icon-envelope"></span>
-                                        {{ Form::email('email', null,(['id'=>'email', 'class' => 'form-control', 'required' => 'true'])) }}
-                                        {{ Form::label( 'email', 'Email*:') }}
-                                        @if($errors->has('email'))
-                                            <small class="form-text invalid-feedback">
-                                                {{ $errors->first('email') }}
-                                            </small>
-                                        @endif
-                                    </div>
-                                    <div class="form-group customised-formgroup"> <span class="icon-telephone"></span>
-                                        {{ Form::tel('movil', null,(['id'=>'movil', 'class' => 'form-control', 'required' => 'true'])) }}
-                                        {{ Form::label( 'movil', 'Movil*:') }}
-                                    </div>
-                                    <div class="form-group customised-formgroup"> <span class="icon-laptop"></span>
-                                        {{ Form::text('website', null,(['id'=>'website', 'class' => 'form-control', 'required' => 'true'])) }}
-                                        {{ Form::label('website', 'Website:') }}
-                                    </div>
-                                    <div class="form-group customised-formgroup"> <span class="icon-bubble"></span>
-                                        {{ Form::textarea('comment', null,(['id'=>'comment', 'class' => 'form-control', 'required' => 'required'])) }}
-                                        {{ Form::label('comment', 'Mensaje*:') }}
-                                        @if($errors->has('comment'))
-                                            <small class="form-text invalid-feedback">
-                                                {{ $errors->first('comment') }}
-                                            </small>
-                                        @endif
-                                    </div>
-                                    <div>
-                                        {!!Form::submit('SEND', array('class' => 'btn btn-fill full-width btnsendemail')) !!}
-                                        <!--<button type="submit" class="btn btn-fill full-width"> Si la Quiero <span class="icon-chevron-right"></span></button>-->
-                                    </div>
-                                </div>
-                                @if(Session::has('message'))
-                                    {{Session::get('message')}}
-                                @endif
-                            {!! Form::close() !!}
-
-                            <!--
-                          <form class="email_form" action="email.php" method="post">
-                            <div class="form-element-wrapper">
-                                <h3>¿Quieres una cotización?</h3>
-                                <div class="form-group customised-formgroup"> <span class="icon-user"></span>
-                                    <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Nombre">
-                                </div>
-                                <div class="form-group customised-formgroup"> <span class="icon-envelope"></span>
-                                    <input type="text"  id="txtEmail" name="txtEmail" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="form-group customised-formgroup"> <span class="icon-telephone"></span>
-                                    <input type="text" id="txtPhone" name="txtPhone" class="form-control" placeholder="Móvil">
-                                </div>
-                                <div class="form-group customised-formgroup"> <span class="icon-laptop"></span>
-                                    <input type="text" id="txtSitio" name="txtSitio" class="form-control" placeholder="Website">
-                                </div>
-                                <div class="form-group customised-formgroup"> <span class="icon-bubble"></span>
-                                    <textarea id="txtMensaje" name="txtMensaje" class="form-control" placeholder="Mensaje"></textarea>
-                                </div>
-                            </div>
-                            <div>
-                                <button type="submit" class="btn btn-fill full-width"> Si la Quiero <span class="icon-chevron-right"></span></button>
-                            </div>
-
-                        </form>-->
-                    </div>
+                    @include('contactform')
                 </div>
+                
             </div>
         </div>
     </section>
@@ -406,57 +301,4 @@
 
 @section('scripts')
     @parent
-
-    <script>
-        $(document).ready(function () {
-            var form = $('.emailform');
-
-            /*console.log(form.serialize());*/
-           
-            
-            form.submit(function(e) {
-                e.preventDefault();
-                
-                var a = $("input[name='name']").val();
-                var b = $("input[name='email']").val();
-                var c = $("input[name='movil']").val();
-                var d = $("input[name='website']").val();
-                var e = $("textarea[name='comment']").val();
-                var myObj = [ a , b, c, d, e ];
-                //myObj[0].push("name");                       
-                
-                /*
-                if (a==null || a=="",b==null || b=="",c==null || c=="",d==null || d=="", e==null || e=="")
-                {                
-                    
-                    $(form).append('<div class="alert alert-warning" role="alert">Por favor complete todos los campos :/ </div>');    
-                    setTimeout(function() {
-                        $(form).children('.alert').remove();    
-                    }, 3000);
-                    return false;
-                }*/
-                if(!$(form).valid()){
-                    return
-                }
-                else{
-                    $.ajax({
-                        url: "{{ route('contacto.store') }}",
-                        method: 'POST',
-                        data: form.serialize(),
-                        dataType: 'json',
-                        success: function(msg) {
-                            $(form).append('<div class="alert alert-success" role="alert">Gracias por contactarnos :)</div>');    
-                            setTimeout(function() {
-                                $(form).children('.alert').remove();    
-                            }, 3000);
-                            
-                        },
-                        error: function(msg) {
-                            $(form).append('<div class="alert alert-danger" role="alert">Su mensaje no fue enviado, intente mas tarde.</div>')
-                        }
-                    });
-                }
-            });
-        });
-    </script>
 @endsection
