@@ -90,7 +90,26 @@
             color:#1a252b !important;
         }
 
-       
+        #newsletterform label 				 {
+            color:#999 !important; 
+            font-size:14px !important;
+            font-weight:normal !important;
+            position:absolute !important;
+            pointer-events:none !important;
+            left:45px !important;
+            top:12px !important;
+            transition:0.2s ease all !important; 
+            -moz-transition:0.2s ease all !important; 
+            -webkit-transition:0.2s ease all !important;
+        }
+
+            /* active state */
+        #newsletterform input:focus ~ label, #newsletterform input:valid ~ label,
+        #newsletterform textarea:focus ~ label, #newsletterform textarea:valid ~ label {
+            top:-5px !important;
+            font-size:12px !important;
+            color:#1a252b !important;
+        }
     </style>
     @show
 </head>
@@ -120,7 +139,8 @@
                         <li><a href="{{ route('casosexito') }}">Casos de Éxitos</a></li>
                         <li><a href="{{ route('nosotros') }}">SEOGraphics</a></li>
                         <li class="dropdown"><a href="" data-toggle="dropdown">Blog</a></li>
-                        <li class="btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>
+                        <!--<li class="btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>-->
+                        <li class="btn btn-fill"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -130,7 +150,7 @@
     <div class="row">
         @yield('content')
     </div>
-    @section('footer')
+    @section('footer')    
         <footer id="footer">
             <a class="top-btn page-scroll" href="index.html#top"><span class="icon-chevron-up b-clor regular-text text-center"></span></a>
             <div class="grey-dark-bg text-center">
@@ -143,14 +163,14 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="form-group customised-formgroup"> <span class="icon-user"></span>
-                                        {{ Form::text('name',null,(['id'=>'name', 'class' => 'form-control'])) }}
+                                        {{ Form::text('name',null,(['id'=>'name', 'class' => 'form-control', 'required'=>'true'])) }}
                                         {{ Form::label( 'name', 'nombres*:') }}
                                         <!--<input class="form-control" placeholder="Nombre">-->
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="form-group customised-formgroup"> <span class="icon-envelope"></span>
-                                        {{ Form::email('email', null,(['id'=>'email', 'class' => 'form-control'])) }}
+                                        {{ Form::email('email', null,(['id'=>'email', 'class' => 'form-control', 'required'=>'true'])) }}
                                         {{ Form::label( 'email', 'Email*:') }}
                                         <!--<input class="form-control" placeholder="Email">-->
                                     </div>
@@ -234,56 +254,87 @@
 
         <!-- modal -->
         <div class="modal fade verticl-center-modal" id="getAQuoteModal" tabindex="-1" role="dialog" aria-labelledby="getAQuoteModal">
-        <div class="modal-dialog getguoteModal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-cross-circle"></span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="customise-form">
-                                <form class="email_form">
-                                    <h3>¿Quieres una cotización?</h3>
-                                    <div class="form-group customised-formgroup"> <span class="icon-user"></span>
-                                        <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Nombre">
+            <div class="modal-dialog getguoteModal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-cross-circle"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="customise-form">                                                                     
+                                @if(Session::has('flash_message'))
+                                    <div class="alert alert-succes">{{ Session::get('flash_message') }}</div>
+                                @endif
+                                {!! Form::open(['class' => 'formCotizacion']) !!}
+                                    {{ csrf_field() }}
+                                    <div class="form-element-wrapper">
+                                        <h3>¿Quieres una cotización?</h3>
+                                        <div class="form-group customised-formgroup"> <span class="icon-user"></span>                                        
+                                            {{ Form::text('name',null,(['id'=>'name', 'class' => 'form-control', 'required'=>'true'])) }}
+                                            {{ Form::label( 'name', 'nombres*:') }}
+                                            @if($errors->has('name'))
+                                                <small class="form-text invalid-feedback">
+                                                    {{ $errors->first('name') }}
+                                                </small>
+                                            @endif
+                                        </div>
+                                        <div class="form-group customised-formgroup"> <span class="icon-envelope"></span>
+                                            {{ Form::email('email', null,(['id'=>'email', 'class' => 'form-control', 'required'=>'true'])) }}
+                                            {{ Form::label( 'email', 'Email*:') }}
+                                            @if($errors->has('email'))
+                                                <small class="form-text invalid-feedback">
+                                                    {{ $errors->first('email') }}
+                                                </small>
+                                            @endif
+                                        </div>
+                                        <div class="form-group customised-formgroup"> <span class="icon-telephone"></span>
+                                            {{ Form::tel('movil', null,(['id'=>'movil', 'class' => 'form-control', 'required'=>'true'])) }}
+                                            {{ Form::label( 'movil', 'Movil*:') }}
+                                        </div>
+                                        <div class="form-group customised-formgroup"> <span class="icon-laptop"></span>
+                                            {{ Form::text('website', null,(['id'=>'website', 'class' => 'form-control', 'required'=>'true'])) }}
+                                            {{ Form::label('website', 'Website:') }}
+                                        </div>
+                                        <div class="form-group customised-formgroup"> <span class="icon-bubble"></span>
+                                            {{ Form::textarea('comment', null,(['id'=>'comment', 'class' => 'form-control', 'required'=>'true'])) }}
+                                            {{ Form::label('comment', 'Mensaje*:') }}
+                                            @if($errors->has('comment'))
+                                                <small class="form-text invalid-feedback">
+                                                    {{ $errors->first('comment') }}
+                                                </small>
+                                            @endif
+                                        </div>
+                                        <div>
+                                            {!!Form::submit('ENVIAR', array('class' => 'btn btn-fill full-width btnsendemail')) !!}
+                                            <!--<button type="submit" class="btn btn-fill full-width"> Si la Quiero <span class="icon-chevron-right"></span></button>-->
+                                        </div>
                                     </div>
-                                    <div class="form-group customised-formgroup"> <span class="icon-envelope"></span>
-                                        <input type="email" id="txtEmail" name="txtEmail" class="form-control" placeholder="Email">
-                                    </div>
-                                    <div class="form-group customised-formgroup"> <span class="icon-telephone"></span>
-                                        <input type="text" id="txtPhone" name="txtPhone" class="form-control" placeholder="Móvil">
-                                    </div>
-                                    <div class="form-group customised-formgroup"> <span class="icon-laptop"></span>
-                                        <input type="text" id="txtSitio" name="txtSitio" class="form-control" placeholder="Website">
-                                    </div>
-                                    <div class="form-group customised-formgroup"> <span class="icon-bubble"></span>
-                                        <textarea id="txtMensaje" name="txtMensaje" class="form-control" placeholder="Mensaje"></textarea>
-                                    </div>
-                                    <div>
-                                        <button type="submit" class="btn btn-fill full-width">Si la Quiero<span class="icon-chevron-right"></span></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>¿Que sigue?</h3>
-                            <ul class="list-with-arrow">
-                                <li>Te enviaremos un correo de confirmación de día y hora que  te contactara uno de nuestros expertos.</li>
-                                <li>En un tiempo estimado cotizamos el servicio requerido.</li>
-                                <li>Por último podríamos concretar una cita o reunión, ya sea personal o video llamada.</li>
-                            </ul>
-                            <div class="contact-info-box-wrapper">
-                                <div class="contact-info-box"> <span class="icon-telephone"></span>
-                                    <div>
-                                        <h6>Llamanos</h6>
-                                        <p>+57 3192948824</p>
-                                    </div>
+                                    @if(Session::has('message'))
+                                        {{Session::get('message')}}
+                                    @endif
+                                {!! Form::close() !!}                     
                                 </div>
-                                <div class="contact-info-box"> <span class="icon-envelope"></span>
-                                    <div>
-                                        <h6>Enviar un correo electrónico</h6>
-                                        <p>contactanos@seographics.com.co</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>¿Que sigue?</h3>
+                                <ul class="list-with-arrow">
+                                    <li>Te enviaremos un correo de confirmación de día y hora que  te contactara uno de nuestros expertos.</li>
+                                    <li>En un tiempo estimado cotizamos el servicio requerido.</li>
+                                    <li>Por último podríamos concretar una cita o reunión, ya sea personal o video llamada.</li>
+                                </ul>
+                                <div class="contact-info-box-wrapper">
+                                    <div class="contact-info-box"> <span class="icon-telephone"></span>
+                                        <div>
+                                            <h6>Llamanos</h6>
+                                            <p>+57 3192948824</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-box"> <span class="icon-envelope"></span>
+                                        <div>
+                                            <h6>Enviar un correo electrónico</h6>
+                                            <p>contactanos@seographics.com.co</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -291,8 +342,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>      
+        </div>      
     @show
 
     @section('scripts')
@@ -315,9 +365,9 @@
         <script>
         $(document).ready(function () {
             
-            var form = $('.sendmailcontact');
+            var form = $('.formContact');
             
-            console.log(form);
+            //console.log(form);
 
             form.submit(function(e) {                
                 e.preventDefault();
@@ -327,7 +377,7 @@
                 var c = $("input[name='movil']").val();
                 var d = $("input[name='website']").val();
                 var e = $("textarea[name='comment']").val();
-                var myObj = [a, b, c, d, e];
+                //var myObj = [a, b, c, d, e];
                 //myObj[0].push("name");                       
 
                 $(form).find("input[type='submit']").addClass('disabled');
@@ -366,7 +416,60 @@
                 }
             });
 
-            /*var newsForm = $('#newsletterform');
+            var formCotiza = $('.formCotizacion');
+            
+            //console.log(formCotizacion);
+
+            formCotiza.submit(function(e) {                
+                e.preventDefault();
+
+                var v = $(formCotiza).find("input[name='name']").val();
+                var w = $(formCotiza).find("input[name='email']").val();
+                var x = $(formCotiza).find("input[name='movil']").val();
+                var y = $(formCotiza).find("input[name='website']").val();
+                var z = $(formCotiza).find("textarea[name='comment']").val();
+                var myObj = [v, w, x, y, z];
+                console.log(myObj);
+                //myObj[0].push("name");                       
+
+                $(formCotiza).find("input[type='submit']").addClass('disabled');
+
+                if (v == null || v == "", w == null || w == "", x == null || x == "", y == null || y == "", z == null || z == "") {
+                    $(formCotiza).append('<div class="alert alert-warning" role="alert">Por favor complete todos los campos :/ </div>');
+                    setTimeout(function () {
+                        $(formCotiza).children('.alert').remove();
+                        $(formCotiza).find("input[type='submit']").removeClass('disabled');
+                    }, 3000);
+                    return false;
+                }
+                /*
+                if(!$(formCotiza).valid()){
+                    return
+                }*/
+                else {                    
+                    $.ajax({
+                        url: "{{ route('contacto.store') }}",
+                        method: 'POST',
+                        data: formCotiza.serialize(),
+                        dataType: 'json',
+                        success: function (msg) {
+                            $(formCotiza).find("input[type='text'], input[type='tel'], input[type='email'], textarea").val("").attr('disabled', true);
+                            $(formCotiza).append('<div class="alert alert-success" role="alert">Gracias por contactarnos :)</div>');
+                            setTimeout(function () {
+                                $(formCotiza).children('.alert').remove();
+                                $(formCotiza).find("input[type='submit']").removeClass('disabled');
+                                $(formCotiza).find("input[type='text'], input[type='tel'], input[type='email'], textarea").removeAttr('disabled');
+                            }, 3000);
+
+                        },
+                        error: function (msg) {
+                            $(formCotiza).append('<div class="alert alert-danger" role="alert">Su mensaje no fue enviado, intente mas tarde.</div>')
+                        }
+                    });
+                }
+            });
+
+            var newsForm = $('#newsletterform');
 
             newsForm.submit(function(e) {
                 e.preventDefault();
@@ -389,7 +492,7 @@
                 /*
                 if(!$(form).valid()){
                     return
-        }*//*
+        }*/
                 else {
                     $.ajax({
                         url: "{{ route('newsletter.store') }}",
@@ -398,7 +501,7 @@
                         dataType: 'json',
                         success: function (msg) {
                             $(newsForm).find("input[type='text'], input[type='email']").val("").attr('disabled', true);
-                            $(newsForm).append('<div class="alert alert-success" role="alert">Gracias por contactarnos :)</div>');
+                            $(newsForm).append('<div class="alert alert-success" role="alert">Gracias por Suscribirte a nuestro canal :)</div>');
                             setTimeout(function () {
                                 $(newsForm).children('.alert').remove();
                                 $(newsForm).find("input[type='submit']").removeClass('disabled');
@@ -411,7 +514,7 @@
                         }
                     });
                 }
-            });*/
+            });
         });
         </script>
         

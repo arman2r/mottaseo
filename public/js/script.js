@@ -311,6 +311,8 @@ $(function() {
 
 
     /*Js for sending email and validation*/
+
+    /*
     $('.email_form').on('submit', function(e) {
         e.preventDefault();
         var _self = $(this);
@@ -336,7 +338,7 @@ $(function() {
                 }
             }
         });
-    });
+    });*/
 
     //script for portfolio details modal tigger
     //portfolio modal
