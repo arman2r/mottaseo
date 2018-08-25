@@ -22,17 +22,23 @@ class newsletterController extends Controller
             'email' => 'required|email'
         ]);
 
-        DB::table('Order_table')->insert(
-            ['name' => $request->name,
+        //$usernews= new usernews();
+        //$usernews->nombre= $request['name'];
+        //$usernews->email= $request['email'];
+        // add other fields
+        //$usernews->save();
+/*
+        DB::table('usernews')->insert(
+            ['name' => $request->nombre,
             'email' => $request->email]
         );
-
+*/
         Mail::send('emails.newsletter-message', [
 			'name' => $request->name,
 			'email' => $request->email,
         ], function($mail) use($request) {
             $mail->from($request->email);
-            $mail->to(['arman.2.r@gmail.com',$request->email])->subject('Nuevo Usuario Suscrit@');
+            $mail->to(['contactanos@seographics.com.co',$request->email])->subject('Nuevo Usuario Suscrit@');
         });
 
         $response = array(

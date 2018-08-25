@@ -31,7 +31,7 @@ class MailController extends Controller
         ], function($mail) use($request) {
             $mail->from($request->email);
 
-            $mail->to(['arman.2.r@gmail.com',$request->email])->subject('Contact Message');
+            $mail->to(['contactanos@seographics.com.co',$request->email])->subject('Mensaje de contacto seographics.com.co');
             
         });
 

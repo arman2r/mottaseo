@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class seographicsdb extends Model
 {
-    protected $table = 'seographicsdb';
+    protected $table = 'usernews';
 }
