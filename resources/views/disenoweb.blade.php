@@ -99,7 +99,7 @@ SEOGraphics encontraras los mejores diseñadores web
                             <div class="design-process-content">
                                 <h3 class="semi-bold">Diseño</h3>
                                 <p class="regular-text" align="justify">Este es el segundo y más importante paso del proyecto, ya que aquí es donde el grupo se integra y se inicia con un diseño digital donde se estructura el sitio web del cliente, si dejar pasar la supervisión de los desarrolladores los cuales son los encargados de dar vida a este diseño ya que  pasarán horas  del día digitado código para armar desde allí un sitio dinámico, amable, adaptable y de fácil usabilidad para los usuarios.</p><br>
-                               <img src="images/dise%C3%B1o-web.jpg" alt="design process" class="img-responsive" /> </div>
+                               <img src="images/diseno-web.jpg" alt="design process" class="img-responsive" /> </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="final-design">
                             <div class="design-process-content">
@@ -204,10 +204,354 @@ SEOGraphics encontraras los mejores diseñadores web
                     </div>
                     </div>
                 </div>
-                <div class="col-xs-12"> <a href="portafolio.html" class="btn btn-fill full-width">Descubrir más</a> </div>
+                <div class="col-xs-12"> <a href="{{ route('portafolio') }}" class="btn btn-fill full-width">Descubrir más</a> </div>
             </div>
         </div>
     </section>
+
+    <div class="modal fade verticl-center-modal" id="portfolioDetModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioDetModal1">
+        <div class="modal-dialog getguoteModal-dialog potfolio-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-cross-circle"></span></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="slider0">
+                                <div id="carousel-bounding-box">
+                                    <div id="myCarousel1" class="carousel slide myCarousel">
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="images/cuchiyuyo.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="1">
+                                                <img src="images/web2018-cuchiyuyo.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="2">
+                                                <img src="images/web2-cuchi.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div id="slider-thumbs">
+                                                <!-- thumb navigation carousel items -->
+                                                <ul class="list-inline  thumb-list">
+                                                    <li>
+                                                        <a id="carousel-selector-0" class="carousel-selector selected"> <img src="images/cuchiyuyo-mini.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-1" class="carousel-selector"> <img src="images/web2018-cuchi-mini.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-2" class="carousel-selector"> <img src="images/web2-cuchi-mini.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="port-modal-content">
+                                <p class="gray-text">Diseño del sitio web.</p>
+                                <h2 class="b-clor">Corporación Ambiental Cuchiyuyo</h2>
+                                <p class="regular-text" align="justify">La corporación ambiental cuchiyuyo pensando en las nuevas tecnologías quiso iniciar su proceso de darse a conocer en el mundo digital, por lo tanto nos han contactado para este gran proyecto, el cual fue el desarrollo de su sitio web con su propuesta de servicios de reforestación, capacitación ambiental, granjas orgánicas y construcción de estufas ecoeficientes.  Ya que estos servicios van dirigidos a las personas que habitan nuestros campos Colombianos.</p>
+                                <p class="regular-text" align="justify">Para SEOGraphics fue uno de los trabajos más gratificantes ya que trabajamos en campo y logramos tener contacto con cada una de las personas que participan de estos proyectos productivos, de esta forma pudimos desarrollar un sitio dinámico y muy fácil de navegar y entender por las personas que desean saber qué hace la corporación y de la misma forma a las ONG internacionales que están dispuestas a invertir en desarrollo de proyectos productivos en nuestro país.</p>
+                            </div>
+                            <h3>Entregamos:</h3>
+                            <ul class="list-with-arrow">
+                                <li><i class="icon-chevron-right"></i>Estrategia para hacer crecer el negocios en línea.</li>
+                                <li><i class="icon-chevron-right"></i>Sitio web único con un excelente diseño de experiencia de usuario.</li>
+                                <li><i class="icon-chevron-right"></i> Un sistema de gestión de contenido personalizado y administración del sitio web. </li>
+                            </ul>
+                            <a target="_blank" href=" http://coramcuchiyuyo.com/" class="medium-btn2  btn btn-fill" >Visita el sitio web</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="modal fade verticl-center-modal" id="portfolioDetModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioDetModal2">
+        <div class="modal-dialog getguoteModal-dialog potfolio-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-cross-circle"></span></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="slider1">
+                                <div id="carousel-bounding-box">
+                                    <div id="myCarousel2" class="carousel slide myCarousel">
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="images/limpia-amarres.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="1">
+                                                <img src="images/tarot.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="2">
+                                                <img src="images/web-amarresdo.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div id="slider-thumbs2">
+                                                <ul class="list-inline  thumb-list">
+                                                    <li>
+                                                        <a id="carousel-selector-0-0" class="carousel-selector selected"> <img src="images/limpia-mini.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-1-1" class="carousel-selector"> <img src="images/tarot-mini.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-2-2" class="carousel-selector"> <img src="images/web-amarres-mini.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="port-modal-content">
+                                <p class="gray-text">Diseño de sitio web y campañas de pago en Adwords en la ciudad e México.</p>
+                                <h2 class="b-clor">Amarres y Dominios</h2>
+                                <p class="regular-text" align="justify">Siendo una pareja joven ya con una gran experiencia en las ciencias ocultas de la magia y lectura de tarot al igual que hechizos de amor y muchas cosas más de este mundo misterioso quisieron ampliar su círculo de clientes, así que nos propusieron que desarrolláramos un sitio web para ellos con cada uno de los servicios que brindan en la ciudad de tijuana México, ya que allí es donde residen la mayor parte de sus clientes como también en la frontera con san diego california.</p>
+                                <p class="regular-text" align="justify">Nuestro trabajo fue crear un sitio acorde a las necesidades de esta pareja de místicos con facilidad de sus usuarios y clientes se contacte con ellos de una forma fácil y muy discreta y de esta forma estoy místicos puedan ayudar con su conocimiento milenario.</p>
+                            </div>
+                            <h3>Entregamos:</h3>
+                            <ul class="list-with-arrow">
+                                <li><i class="icon-chevron-right"></i> Estrategia para hacer crecer el negocios en línea.</li>
+                                <li><i class="icon-chevron-right"></i> Sitio web único con un excelente diseño de experiencia de usuario.</li>
+                                <li><i class="icon-chevron-right"></i> Un sistema de gestión de contenido personalizado
+                                    <br> en el sitio web.</li>
+                            </ul>
+                            <a target="_blank" href="http://www.amarresydominios.mx" class="medium-btn2  btn btn-fill">Visita el sitio web</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade verticl-center-modal" id="portfolioDetModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioDetModal3">
+        <div class="modal-dialog getguoteModal-dialog potfolio-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-cross-circle"></span></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="slider2">
+                                <div id="carousel-bounding-box">
+                                    <div id="myCarousel3" class="carousel slide myCarousel">
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="images/web-sulicam540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="1">
+                                                <img src="images/conta-sulicam540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="2">
+                                                <img src="images/web-tablet540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div id="slider-thumbs3">
+                                                <ul class="list-inline  thumb-list">
+                                                    <li>
+                                                        <a id="carousel-selector-0-3" class="carousel-selector selected"> <img src="images/we-sulicam134.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-1-3" class="carousel-selector"> <img src="images/conta-suli154.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-2-3" class="carousel-selector"> <img src="images/web-table-mini.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="port-modal-content">
+                                <p class="gray-text">Diseño de sitio web.</p>
+                                <h2 class="b-clor">Hotel Sulicam Neiva</h2>
+                                <p class="regular-text" align="justify">Es uno de los más prestigiosos hoteles de la ciudad de Neiva además de tener una excelente ubicación al complejo comercial preferido por empresas o grandes comerciantes que visitan esta ciudad, pero ellos notaron que tenían una falencia en la cual se hizo un estudio de medios y este arrojó que una de las grandes falencia era su sitio web el cual era muy complejo y algo desordenado.</p>
+                                <p class="regular-text" align="justify">Así que nos contactaron para que presentaremos una nueva propuesta para el sitio web el cual dedicamos tiempo y muchas ideas para poder lograr lo que hoy en día tienen como presencia digital en Internet que es un sitio web que brinda todos los servicios de forma dinámica para los usuarios y clientes.</p>
+                            </div>
+                            <h3>Entregamos:</h3>
+                            <ul class="list-with-arrow">
+                                <li><i class="icon-chevron-right"></i>Estrategia para hacer crecer el negocios en línea.</li>
+                                <li><i class="icon-chevron-right"></i> Sitio web único con un excelente diseño de experiencia de usuario.</li>
+                            </ul>
+                            <a target="_blank" href="http://sulicam.com/" class="medium-btn2  btn btn-fill">Visita el sitio web</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade verticl-center-modal" id="portfolioDetModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioDetModal4">
+        <div class="modal-dialog getguoteModal-dialog potfolio-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-cross-circle"></span></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="slider3">
+                                <div id="carousel-bounding-box">
+                                    <div id="myCarousel4" class="carousel slide myCarousel">
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="images/infiweb540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="1">
+                                                <img src="images/notiinfi540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="2">
+                                                <img src="images/infikisd540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div id="slider-thumbs4">
+                                                <!-- thumb navigation carousel items -->
+                                                <ul class="list-inline  thumb-list">
+                                                    <li>
+                                                        <a id="carousel-selector-0-4" class="carousel-selector selected"> <img src="images/infiweb153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-1-4" class="carousel-selector"> <img src="images/notiinfi153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-2-4" class="carousel-selector"> <img src="images/infikisd153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="port-modal-content">
+                                <p class="gray-text" >Diseño de sitio web y blog de noticias</p>
+                                <h2 class="b-clor">Instituto Financiero para el Desarrollo del Huila (Infihuila)</h2>
+                                <p class="regular-text" align="justify">Siendo un instituto financiero para el desarrollo del huila el cual brinda ayuda a pequeñas empresas y comerciantes independientes, se vio en la necesidad de mejorar sus servicios y productos en cuanto a la atención de sus usuarios, por tal motivo fuimos contratados para el desarrollo de su sitio web ya que contaba con ciertos parámetros gubernamentales exigidos para este tipo de instituciones, de esta forma cambiar el aspecto de atención digital a sus usuarios y que estos pueda hacer consultas de sus productos y poder tener más información de los servicios que brinda el instituto.</p>
+                                <p class="regular-text" align="justify">Para SEOGraphics fue uno de los trabajos con mayor atención en cada uno de los pasos a desarrollar, ya que en esta ocasión estábamos de la mano con un grupo de integrantes o empleados coordinados por el señor Gerente sugiriendo un montón de ideas para el desarrollo del nuevo sitio además del tiempo dedica a transcribir muchos textos que la mayor parte se encontraban impresos, pero todo este tiempo valió la pena para entregar un sitio acorde a las necesidades institucionales y de la misma forma a sus clientes.</p>
+                            </div>
+                            <h3>Entregamos:</h3>
+                            <ul class="list-with-arrow">
+                                <li><i class="icon-chevron-right"></i>Estrategia para hacer crecer el negocios en línea.</li>
+                                <li><i class="icon-chevron-right"></i> Sitio web único con un excelente diseño de experiencia de usuario.</li>
+                            </ul>
+                            <a target="_blank" href="https://www.infihuila.gov.co/" class="medium-btn2  btn btn-fill">Visita el sitio web</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade verticl-center-modal" id="portfolioDetModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioDetModal5">
+        <div class="modal-dialog getguoteModal-dialog potfolio-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-cross-circle"></span></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="slider4">
+                                <div id="carousel-bounding-box5">
+                                    <div id="myCarousel5" class="carousel slide myCarousel">
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="images/web-auto540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="1">
+                                                <img src="images/compra-auto540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="2">
+                                                <img src="images/pago.auto540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div id="slider-thumbs5">
+                                                <ul class="list-inline  thumb-list">
+                                                    <li>
+                                                        <a id="carousel-selector-0-5" class="carousel-selector selected"> <img src="images/web-auto153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-1-5" class="carousel-selector"> <img src="images/copra-auto153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-2-5" class="carousel-selector"> <img src="images/pago-auto153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="port-modal-content">
+                                <p class="gray-text">Diseño de sitio web.</p>
+                                <h2 class="b-clor">Autocintas Pitalito</h2>
+                                <p class="regular-text" align="justify">Es una de las empresas locales de venta de rines de lujo y llantas, pero al ver que su bodega aumentaba en productos y pocos clientes se vieron en la necesidad de entrar al mundo digital así que nos contactaron para poder hacer su sueño realidad y poder desarrollar su proyecto de una tienda virtual no sin antes hacer un estudio de mercado para mirar que tan efectiva será su nueva inversión, al nosotros realizar un estudio de mercado tanto internamente con en el resto del país nos dimos cuenta que hay una gran demanda de venta para este tipo de producto en todo el país, así que nos pusimos la camiseta e iniciamos el proceso de realizar su tienda virtual.</p>
+                                <p class="regular-text" align="justify">Para nosotros fue una gran experiencia poder hacer este portal ya que aprendemos que otro tipo de mercado y venta así que al estar en el local y ver su movimiento aprendimos que es lo que la gente busca a la hora de decorar su vehículo.</p>
+                            </div>
+                            <h3>Entregamos:</h3>
+                            <ul class="list-with-arrow">
+                                <li><i class="icon-chevron-right"></i> Estrategia para hacer crecer el negocios en línea.</li>
+                                <li><i class="icon-chevron-right"></i> Sitio web único con un excelente diseño de experiencia de usuario.</li>
+                                <li><i class="icon-chevron-right"></i> Un sistema de gestión de contenido personalizado
+                                    <br> en el sitio web.</li>
+                            </ul>
+                            <a target="_blank" href="http://autocintaspitalito.com/" class="medium-btn2  btn btn-fill">Visita el sitio web</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade verticl-center-modal" id="portfolioDetModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioDetModal6">
+        <div class="modal-dialog getguoteModal-dialog potfolio-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-cross-circle"></span></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="slider5">
+                                <div id="carousel-bounding-box6">
+                                    <div id="myCarousel6" class="carousel slide myCarousel">
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="images/frentepekas540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="1">
+                                                <img src="images/web-pekas540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div class="item" data-slide-number="2">
+                                                <img src="images/pagopekas540.jpg" alt="images" class="img-responsive">
+                                            </div>
+                                            <div id="slider-thumbs6">
+                                                <ul class="list-inline  thumb-list">
+                                                    <li>
+                                                        <a id="carousel-selector-0-6" class="carousel-selector selected"> <img src="images/frentepekas153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-1-6" class="carousel-selector"> <img src="images/web-pekas153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="carousel-selector-2-6" class="carousel-selector"> <img src="images/pagopekas153.jpg" class="img-responsive" alt=""> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="port-modal-content">
+                                <p class="gray-text">Diseño de sitio web.</p>
+                                <h2 class="b-clor">Pekas Pizza Pitalito</h2>
+                                <p class="regular-text" align="justify">Es una de las mejores pizzerías de la ciudad de pitalito huila en donde podrás encontrar productos de altísima calidad así como un variado menú en comida rápida ellos al ver como es la aceptación de sus clientes quisieron incursionar en el mundo digital para lo cual nos contrataron para desarrollar este proyecto el cual brinda a su ciudad la facilidad de ver su carta de productos y contactar con ellos en cualquier momento de sus horarios de atención.</p>
+                                <p class="regular-text" align="justify">Para SEOGraphics fue una de las tantas experiencias divertidas en la cual nos enseñaron a preparar cada uno de sus platos como poder probar de ellos y la verdad son muy buenos tanto así que el tiempo que duramos trabajando y comiendo fue estupendo con una gran recompensa para ambos ellos su sitio dinámico y moderno y nosotros unos kilos de más pero valió la pena.</p>
+                            </div>
+                            <h3>Entregamos:</h3>
+                            <ul class="list-with-arrow">
+                                <li><i class="icon-chevron-right"></i>Estrategia para hacer crecer el negocios en línea.</li>
+                                <li><i class="icon-chevron-right"></i> Sitio web único con un excelente diseño de experiencia de usuario.</li>
+                            </ul>
+                            <a target="_blank" href="http://www.pekaspizza.com/" class="medium-btn2  btn btn-fill">Visita el sitio web</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('footer')
