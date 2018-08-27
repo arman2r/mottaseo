@@ -79,30 +79,7 @@ Políticas | SEOGraphics
 @section('scripts')
     @parent
 
-    <script>
-        $(document).ready(function () {
-            var form = $('.emailform');
-
-            /*console.log(form.serialize());*/
-
-            form.submit(function(e) {
-                e.preventDefault();
-
-                $.ajax({
-                    url: "{{ route('contacto.store') }}",
-                    method: 'POST',
-                    data: form.serialize(),
-                    dataType: 'json',
-                    success: function(data) {
-                        alert('success');
-                    },
-                    error: function(data) {
-                        alert('error');
-                    }
-                });
-            });
-        });
-    </script>
+    
     <script type=application/ld+json>
     {
     "@context":"http://www.schema.org",

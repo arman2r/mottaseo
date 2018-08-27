@@ -160,7 +160,7 @@
                         <li><a href="{{ route('portafolio') }}">Portafolio</a></li>
                         <li><a href="{{ route('casosexito') }}">Casos de Éxitos</a></li>
                         <li><a href="{{ route('nosotros') }}">SEOGraphics</a></li>
-                        <li class="dropdown"><a href="{{ route('blog') }}" data-toggle="dropdown">Blog</a></li>
+                        <li class="dropdown"><a href="" data-toggle="dropdown">Blog</a></li>
                         <!--<li class="btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>-->
                         <li class="btn btn-fill"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>
                     </ul>
@@ -259,12 +259,11 @@
                                 <li>
                                     <p class="regular-text text-color-light">Estar en contacto</p>
                                     <ul class="social-links">
-                                        <li><a href=""><span class="icon-facebook"></span></a></li>
-                                        <li><a href=""><span class="icon-twitter"></span></a></li>
-                                        <li><a href=""><span class="icon-google-plus"></span></a></li>
-                                        <li><a href=""><span class="icon-instagram"></span></a></li>
-                                        <li><a href=""><span class="icon-pinterest"></span></a></li>
-                                        <li><a href=""><span class="icon-linkedin"></span></a></li>
+                                        <li><a href="https://www.facebook.com/SEOGraphicsColombia/" target="_blank"><span class="icon-facebook"></span></a></li>
+                                        <li><a href="https://twitter.com/SEOGraphicsCol1" target="_blank"><span class="icon-twitter"></span></a></li>
+                                        <li><a href="https://plus.google.com/u/1/114912547282020678629" target="_blank"><span class="icon-google-plus"></span></a></li>
+                                        <li><a href="https://www.instagram.com/seographics/" target="_blank" ><span class="icon-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/company/seographics/" target="_blank"><span class="icon-linkedin"></span></a></li>
                                     </ul>
                                     <li><span class="icon-phone"></span> 319 2948824</li>
                                 </li>

@@ -52,10 +52,10 @@ Artes gráficas la mejor forma de comunicarte con tus clientes.
             <div class="row">
                 <div class="col-sm-8">
                     <div class="blog-item">
-                        <h2 class="blog-item-title font-alt"><a href="blog-media-gallery.html">WHAT DOES A WEB DESIGNER DO?</a></h2>
-                        <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 August, 2016</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Design Category</a> <span class="separator">&nbsp;</span>
+                        <h2 class="blog-item-title font-alt"><a href="">¿QUÉ HACE UN DISEÑADOR WEB?</a></h2>
+                        <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 Augosto, 2018</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Categoría de diseño</a> <span class="separator">&nbsp;</span>
                             <br class="visible-xs">
-                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-bubbles"></i> Comments (2)</a> </div>
+                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href=""><i class="icon-bubbles"></i> Comentarios (2)</a> </div>
                         <div class="blog-media">
                             <ul class="clearlist content-slider">
                                 <li> <img src="images/blog/blog-img-standard-1.jpg" alt="" /> </li>
@@ -66,79 +66,80 @@ Artes gráficas la mejor forma de comunicarte con tus clientes.
                         <div class="blog-item-body">
                             <p>Dolore magna aliquam erat volutpat: Dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure </p>
                         </div>
-                       <div class="blog-item-foot"> <a href="blog-media-gallery.html" class="medium-btn3 btn btn-nofill green-text">Read More</a> </div>
+                       <div class="blog-item-foot"> <a href="{{ route('nota1') }}" class="medium-btn3 btn btn-nofill green-text">Lee más
+</a> </div>
                     </div>
                     <div class="blog-item">
-                        <h2 class="blog-item-title font-alt"><a href="blog-video-post.html">HOW TO APPEAR IN GOOGLE’S #1 PAGE</a></h2>
-                        <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 August, 2016</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Design Category</a> <span class="separator">&nbsp;</span>
+                        <h2 class="blog-item-title font-alt"><a href="">CÓMO APARECER EN LA PÁGINA # 1 DE GOOGLE</a></h2>
+                        <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 Augosto, 2018</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i>Categoría de diseño</a> <span class="separator">&nbsp;</span>
                             <br class="visible-xs">
-                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-bubbles"></i> Comments (2)</a> </div>
+                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href=""><i class="icon-bubbles"></i> Comentarios (2)</a> </div>
                        <div class="blog-media">
                             <iframe width="640" height="360" src="https://www.youtube.com/embed/rrT6v5sOwJg" allowfullscreen></iframe>
                         </div>
                         <div class="blog-item-body">
                             <p> A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, </p>
                         </div>
-                        <div class="blog-item-foot"> <a href="blog-video-post.html" class="medium-btn3 btn btn-nofill green-text">Read More</a> </div>
+                        <div class="blog-item-foot"> <a href="blog-video-post.html" class="medium-btn3 btn btn-nofill green-text">Lee más</a> </div>
                     </div>
                    <div class="blog-item">
-                        <h2 class="blog-item-title font-alt"><a href="blog-details.html">HOW TO DESIGN EFFECTIVE TEAMS?</a></h2>
-                       <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 August, 2016</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Design Category</a> <span class="separator">&nbsp;</span>
+                        <h2 class="blog-item-title font-alt"><a href="">¿CÓMO DISEÑAR EQUIPOS EFECTIVOS?</a></h2>
+                       <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 Augosto, 2018</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Categoría de diseño</a> <span class="separator">&nbsp;</span>
                             <br class="visible-xs">
-                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-bubbles"></i> Comments (2)</a> </div>
+                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href=""><i class="icon-bubbles"></i> Comentarios (2)</a> </div>
                         <div class="blog-media">
                             <a href="blog-details.html"><img src="images/blog/effective-team.jpg" alt="" /></a>
                         </div>
                         <div class="blog-item-body">
                             <p> Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e </p>
                         </div>
-                        <div class="blog-item-foot"> <a href="blog-details.html" class="medium-btn3 btn btn-nofill green-text">Read More</a> </div>
+                        <div class="blog-item-foot"> <a href="blog-details.html" class="medium-btn3 btn btn-nofill green-text">Lee más</a> </div>
                     </div>
                    <div class="blog-item">
-                        <h2 class="blog-item-title font-alt"><a href="blog-details.html">ELEVATING DESIGN THROUGH TRAINING</a></h2>
-                        <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 August, 2016</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Design Category</a> <span class="separator">&nbsp;</span>
+                        <h2 class="blog-item-title font-alt"><a href="">ELEVAR EL DISEÑO A TRAVÉS DE LA FORMACIÓN</a></h2>
+                        <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 Augosto, 2018</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Categoría de diseño</a> <span class="separator">&nbsp;</span>
                             <br class="visible-xs">
-                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-bubbles"></i> Comments (2)</a> </div>
+                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href=""><i class="icon-bubbles"></i> Comentarios (2)</a> </div>
                        <div class="blog-media">
                             <a href="blog-details.html"><img src="images/blog/design-through-traininge.jpg" alt="" /></a>
                         </div>
                         <div class="blog-item-body">
                             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim venia. </p>
                         </div>
-                        <div class="blog-item-foot"> <a href="blog-details.html" class="medium-btn3 btn btn-nofill green-text">Read More</a> </div>
+                        <div class="blog-item-foot"> <a href="" class="medium-btn3 btn btn-nofill green-text">Lee más</a> </div>
                     </div>
                    <div class="blog-item">
-                        <h2 class="blog-item-title font-alt"><a href="blog-details.html">WHY SEO IS NECESSERY</a></h2>
-                       <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 August, 2016</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Design Category</a> <span class="separator">&nbsp;</span>
+                        <h2 class="blog-item-title font-alt"><a href="">POR QUÉ EL SEO ES NECESARIO</a></h2>
+                       <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 Augosto, 2018</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Categoría de diseño</a> <span class="separator">&nbsp;</span>
                             <br class="visible-xs">
-                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-bubbles"></i> Comments (2)</a> </div>
+                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href=""><i class="icon-bubbles"></i> Comentarios (2)</a> </div>
                        <div class="blog-media">
                             <a href="blog-details.html"><img src="images/blog/why-seo-necessery.jpg" alt="" /></a>
                         </div>
                         <div class="blog-item-body">
                             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim venia. </p>
                         </div>
-                        <div class="blog-item-foot"> <a href="blog-details.html" class="medium-btn3 btn btn-nofill green-text">Read More</a> </div>
+                        <div class="blog-item-foot"> <a href="blog-details.html" class="medium-btn3 btn btn-nofill green-text">Lee más</a> </div>
                     </div>
                     <div class="blog-item">
-                        <h2 class="blog-item-title font-alt"><a href="blog-details.html">AVOID SEO MISTAKES WITH 5 STEPS</a></h2>
-                        <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 August, 2016</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i> Design Category</a> <span class="separator">&nbsp;</span>
+                        <h2 class="blog-item-title font-alt"><a href="">EVITE ERRORES SEO CON 5 PASOS</a></h2>
+                        <div class="blog-item-data"> <a href="blog.html#"><i class="icon-calendar-full"></i> 31 Augosto, 2018</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-list4"></i>  Categoría de diseño</a> <span class="separator">&nbsp;</span>
                             <br class="visible-xs">
-                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href="blog.html#"><i class="icon-bubbles"></i> Comments (2)</a> </div>
+                            <a href=""><i class="icon-user"></i> Admin</a> <span class="separator">&nbsp;</span> <a href=""><i class="icon-bubbles"></i> Comentarios(2)</a> </div>
                        <div class="blog-media">
                             <a href="blog-details.html"><img src="images/blog/how-to-hire.jpg" alt="" /></a>
                         </div>
                         <div class="blog-item-body">
                             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim venia. </p>
                         </div>
-                        <div class="blog-item-foot"> <a href="blog-details.html" class="medium-btn3 btn btn-nofill green-text">Read More</a> </div>
+                        <div class="blog-item-foot"> <a href="blog-details.html" class="medium-btn3 btn btn-nofill green-text">Lee más</a> </div>
                     </div>
                    <ul class="pagination top-margin0">
                         <li class="page-item disabled"> <a class="page-link" href="blog.html#" tabindex="-1"><span class="icon-chevron-left"></span></a> </li>
-                        <li class="page-item"><a class="page-link" href="blog.html#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="blog.html#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="blog.html#">3</a></li>
-                        <li class="page-item"> <a class="page-link" href="blog.html#"><span class="icon-chevron-right"></span></a> </li>
+                        <li class="page-item"><a class="page-link" href="">1</a></li>
+                        <li class="page-item"><a class="page-link" href="">2</a></li>
+                        <li class="page-item"><a class="page-link" href="">3</a></li>
+                        <li class="page-item"> <a class="page-link" href=""><span class="icon-chevron-right"></span></a> </li>
                     </ul>
                 </div>
                <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
@@ -151,26 +152,27 @@ Artes gráficas la mejor forma de comunicarte con tus clientes.
                         </form>
                     </div>
                    <div class="widget">
-                        <h5 class="widget-title font-alt">Recent Posts</h5>
+                        <h5 class="widget-title font-alt">Mensajes recientes
+</h5>
                         <div class="widget-body">
                             <ul class="clearlist widget-posts">
                                 <li class="clearfix">
-                                    <div class="widget-posts-descr"> <a href="blog.html#" title="">How to design effective teams?</a> 31 August, 2016 </div>
+                                    <div class="widget-posts-descr"> <a href="blog.html#" title="">¿Cómo diseñar equipos efectivos?</a> 31 Augosto, 2018 </div>
                                 </li>
                                 <li class="clearfix">
-                                    <div class="widget-posts-descr"> <a href="blog.html#" title="">Eleviate design through trainingt</a> 2 September, 2016 </div>
+                                    <div class="widget-posts-descr"> <a href="blog.html#" title="">Alivie el diseño a través del entrenamiento</a> 2 Septiembre, 2018 </div>
                                 </li>
                                 <li class="clearfix">
-                                    <div class="widget-posts-descr"> <a href="blog.html#" title="">Design is not a department but everything</a> 6 July, 2016 </div>
+                                    <div class="widget-posts-descr"> <a href="blog.html#" title="">El diseño no es un departamento sino todo</a> 6 Julio, 2018</div>
                                 </li>
                                 <li class="clearfix">
-                                    <div class="widget-posts-descr"> <a href="blog.html#" title="">How to design a perfect landing page for PPC</a> 5 May, 2016 </div>
+                                    <div class="widget-posts-descr"> <a href="blog.html#" title="">Cómo diseñar una página de inicio perfecta para PPC</a> 5 Mayo, 2018 </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                    <div class="widget">
-                        <h5 class="widget-title font-alt">Recent Comments</h5>
+                        <h5 class="widget-title font-alt">Comentarios Recientes</h5>
                         <div class="widget-body">
                             <ul class="clearlist widget-comments">
                                 <li> <span>Tony Stark</span> <a href="blog.html#" title="">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</a> </li>
@@ -180,13 +182,12 @@ Artes gráficas la mejor forma de comunicarte con tus clientes.
                         </div>
                     </div>
                    <div class="widget">
-                        <h5 class="widget-title font-alt">Categories</h5>
+                        <h5 class="widget-title font-alt">Categorias</h5>
                         <div class="widget-body">
                             <ul class="clearlist widget-menu">
-                                <li> <a href="blog.html#" title="">Design (4)</a> </li>
-                                <li> <a href="blog.html#" title="">Development (2)</a> </li>
-                                <li> <a href="blog.html#" title="">Online Marketing (10)</a> </li>
-                                <li> <a href="blog.html#" title="">Mobile App (3)</a> </li>
+                                <li> <a href="blog.html#" title="">Diseño (4)</a> </li>
+                                <li> <a href="blog.html#" title="">Desarrollo (2)</a> </li>
+                                <li> <a href="blog.html#" title="">Marketing digital(10)</a> </li>
                                 <li> <a href="blog.html#" title="">Website (3)</a> </li>
                             </ul>
                         </div>
@@ -194,18 +195,18 @@ Artes gráficas la mejor forma de comunicarte con tus clientes.
                    <div class="widget">
                         <h5 class="widget-title font-alt">Tags</h5>
                         <div class="widget-body">
-                            <div class="tags"> <a href="">Design</a> <a href="">Development</a> <a href="">Social Media</a> <a href="">SEO</a> <a href="">PPC</a> <a href="">Online Marketing</a> <a href="">Back Office</a> </div>
+                            <div class="tags"> <a href="">Diseño</a> <a href="">Desarrollo</a> <a href="">Social Media</a> <a href="">SEO</a> <a href="">PPC</a> <a href="">Marketing digital</a> </div>
                         </div>
                     </div>
                    <div class="widget">
-                        <h5 class="widget-title font-alt">Archive</h5>
+                        <h5 class="widget-title font-alt">Archivo</h5>
                         <div class="widget-body">
                             <ul class="clearlist widget-menu">
-                                <li> <a href="blog.html#" title="">May 2017</a> </li>
-                                <li> <a href="blog.html#" title="">April 2017</a> </li>
-                                <li> <a href="blog.html#" title="">February 2017</a> </li>
-                                <li> <a href="blog.html#" title="">April 2017</a> </li>
-                                <li> <a href="blog.html#" title="">January 2017</a> </li>
+                                <li> <a href="blog.html#" title="">Mayo 2017</a> </li>
+                                <li> <a href="blog.html#" title="">Abril 2017</a> </li>
+                                <li> <a href="blog.html#" title="">Febrero 2017</a> </li>
+                                <li> <a href="blog.html#" title="">Abril 2017</a> </li>
+                                <li> <a href="blog.html#" title="">Janio 2017</a> </li>
                             </ul>
                         </div>
                     </div>

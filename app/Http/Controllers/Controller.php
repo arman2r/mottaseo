@@ -98,10 +98,9 @@ class Controller extends BaseController
         return view('blog');
     
     }
+    public function nota1(){
 
-    public function contactenos(){
-
-        return view('contactenos');
+        return view('nota1');
     
     }
 }

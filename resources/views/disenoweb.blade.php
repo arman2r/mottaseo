@@ -552,6 +552,7 @@ SEOGraphics encontraras los mejores diseñadores web
             </div>
         </div>
     </div>
+    </section>
 @endsection
 
 @section('footer')

@@ -850,6 +850,7 @@ Portafolio de trabajos echos a nuestros clientes
             </div>
         </div>
     </div>
+    </section>
 @endsection
 
 @section('footer')

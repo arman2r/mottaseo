@@ -50,6 +50,8 @@ Route::get('/sulicam', ['as' => 'sulicam', 'uses' => 'Controller@sulicam']);
 
 Route::get('/cuchiyuyo', ['as' => 'cuchiyuyo', 'uses' => 'Controller@cuchiyuyo']);
 
+Route::get('/nota1', ['as' => 'nota1', 'uses' => 'Controller@nota1']);
+
 /*Route::get('/', 'Controller@home')->name('index');*/
 /*Route::resource('mail', 'MailController');*/
 /*Route::resource('mail', 'MailController');*/
