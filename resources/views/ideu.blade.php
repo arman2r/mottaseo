@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-Trabajos en Hotel sulicam
+Trabajos en Coram Cuchiyuyo
 @endsection
 
 @section('head')
@@ -10,8 +10,8 @@ Trabajos en Hotel sulicam
 
 @section('head')
     @parent
-	<meta name="description" content="El Hotel Sulicam, con su privilegiada ubicación en el corazón comercial y financiero de la Ciudad, facilitando el acceso a atracciones importantes.">
-    <meta name="keywords" content="Hoteles, hotel, neiva, bogota,">
+	<meta name="description" content="No pierdas más oportunidades, aprende hoy mismo un nuevo idioma, más fácil y rápido, cuando quieras y donde quieras. Ideu Idiomas europeos.">
+    <meta name="keywords" content="instituto Ideu">
     <meta property=og:title content="Optimización de sitios web.">
     <meta property=og:type content=website>
     <meta property=og:url content=https://www.seographics.com.co>
@@ -38,12 +38,13 @@ Trabajos en Hotel sulicam
 @endsection
 
 @section('content')
-<section class="banner o-hidden banner-inner sulicam-banner">
+<section class="banner o-hidden banner-inner ideu-banner">
         <div class="container">
             <div class="banner-txt">
-                <h1>Hotel Sulicam</h1>
-                <p class="semi-bold">El Hotel Sulicam, con su privilegiada ubicación en el corazón comercial y financiero <br>de la Ciudad de Neiva, facilita el acceso a los lugares y atracciones más importantes<br> del casco urbano.</p>
-                <a href="http://sulicam.com/" class="medium-btn2 btn btn-nofill" target="_blank">VISITA EL SITIO WEB
+                <h1>IDEU Idiomas Europeos</h1>
+                <p class="semi-bold">No pierdas más oportunidades, aprende hoy mismo un nuevo 
+                    <br>idioma, más fácil y rápido, cuando quieras y donde quieras.</p>
+                <a href="https://ideu.com.co" class="medium-btn2 btn btn-nofill" target="_blank">VISITA EL SITIO WEB
 </a> </div>
         </div>
     </section>
@@ -56,7 +57,7 @@ Trabajos en Hotel sulicam
                     <div class="dis-table">
                         <div> <img src="images/desafio.jpg" alt="case studies" class="img-responsive" /> </div>
                         <div class="text-box">
-                            <p align="justify">La corporación venia con la idea de darse a conocer tanto a nivel local como nacional ya que su trabajo es a nivel social y el campo por lo tanto al hacerse conocer y encontrar posibilidades de apoyo internacional en sus proyectos ambientalesEl hotel sulicam es uno de los mejores hoteles en la ciudad de Neiva ya que tiene una cliente muy selecta de empresarios que visitan esta ciudad por negocios y eventos pero a la hora de tener un sitio web si tenían una gran desventaja ya que intentaron hacer un proyecto muy mal logrado y de poca aceptación de esta forma notaron que sus clientes asían sugerencias sobre el mismo sitio.</p>
+                            <p align="justify">Para este instituto el gran reto era saber cuantas personas visitan su sitio web, además que no tenia el conocimiento de como estaba su sitio en cuanto a la carga se refiere y sin contar que no tenían un proceso de SEO,  en pocas palabras andaban a ciegas en Internet.</p>
                         </div>
                     </div>
                 </div>
@@ -73,9 +74,9 @@ Trabajos en Hotel sulicam
                         <div> <img src="images/Analytics-clientes.jpg" alt="case studies" class="img-responsive" />
                         </div>
                         <div class="text-box order-left">
-                            <p align="justify">En el proceso que elaboramos para ellos fue del sitio web con posicionamiento y nicho de mercado con el cual puedan logra los adjetivos iniciales para su crecimiento, adamas de esto integramos herramientas de seguimiento y analítica logrando un incremento de clientes potenciales.</p>
+                            <p align="justify">Nosotros trabajo en el sitio web es de optimizar el sitio además de la integrar herramientas de analítica y seguimiento de posicionamiento web el cual permite que el instituto tenga información constante de el manejo o vistas de los usuarios países, ciudades y demás información de importancia para el inicio de campañas de marketing o de redes sociales. </p>
                             <ul class="list-with-arrow">
-                                <li>Diseño de sitio web.</li>
+                                <li>Trabajo de optimización de sitio.</li>
                                 <li>Integración de herramientas de SEO.</li>
                                 <li>Integración de herramientas de analítica.</li>
                             </ul>
@@ -92,12 +93,12 @@ Trabajos en Hotel sulicam
                 <div class="col-xs-12">
                     <div class="score-table">
                         <ul>
-                            <li>+3.64% de sesiones</li>
-                            <li>+3.35% de duración promedio de la sesión</li>
-                            <li>+67.47% páginas vistas</li>
+                            <li>+2.64% de sesiones</li>
+                            <li>+12.35% de duración promedio de la sesión</li>
+                            <li>+ 25.47% páginas vistas</li>
                             <li>-53.21% tasa de rebote</li>
-                            <li>+ 32.23% páginas por sesión</li>
-                            <li>+ 28.23% de crecimiento en ventas</li>
+                            <li>+ 22.23% páginas por sesión</li>
+                            <li>+ 22.23% de crecimiento en ventas</li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
@@ -120,20 +121,20 @@ Trabajos en Hotel sulicam
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="{{ route('tecnomusic') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('tecnomusic') }}" class="medium-btn2 btn btn-fill" target="_blank">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6">
-                    <div class="box-content-with-img"> <img src="images/ideu-img.jpg" class="img-responsive" alt="seo-case-studies" />
+                    <div class="box-content-with-img"> <img src="images/clien.cuchi.jpg" class="img-responsive" alt="seo-case-studies" />
                         <div class="box-content-text">
-                            <h3 class="semi-bold">IDEU Idiomas Europeos</h3>
-                            <p class="regular-text" align="justify">Al implementar la optimización en el sitio web han mejorado el proceso y la carga del la misma y con ello el aumento de visitas.</p>
+                            <h3 class="semi-bold">Corporación Ambiental Cuchiyuyo</h3>
+                            <p class="regular-text" align="justify">Este proyecto fue gratificante ya que fue un trabajo en grupo y en el campo donde se desarrollan las actividades de la corporación.</p>
                             <ul>
-                                <li>Optimización del sitio web en WordPress.</li>
-                                <li>Mapa del sitio planeado para aumento de  usuarios, audiencias y objetivos.</li>
-                                <li>Estrategia creadas para plataformas de escritorio y móviles.</li>
+                                <li>Diseño del sitio web en WordPress .</li>
+                                <li>Integración de herramientas de analítica y posicionamiento web.</li>
+                                <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="{{ route('ideu') }}" class="medium-btn2 btn btn-fill" target="_blank">VER DETALLES</a> </div>
+                            <a href="{{ route('cuchiyuyo') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-12"> <a href="{{ route('portafolio') }}" class="btn btn-fill full-width">Descubrir más</a> </div>
@@ -179,7 +180,7 @@ Trabajos en Hotel sulicam
     "@type":"LocalBusiness",
     "image":"https://www.seographics.com.co/images/meta-logo.jpg",
     "name":"SEOGaphics",
-    "url":"https://seographics.com.co",
+    "url":"https://seographics.com.co/ideu.html",
     "telephone":"+57 3192948824",
     "logo":"https://seographics.com.co/images/logo.png",
     "description":"SeoGraphics es una agencia dedicada a diseñar sitios Web de gran impacto comercial con las mejores herramientas de optimización y posicionamiento en los motores de búsqueda, de esta forma será más fácil para los clientes encontrar los productos y servicios de tu empresa. En SEOGraphics trabajamos de la mano contigo para hacer crecer tu negocio mejorando los medios digitales, ya que integramos el sitio web con las redes sociales así optimizando el alcance de nuevos clientes y lograr las metas que deseas.",

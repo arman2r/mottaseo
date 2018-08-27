@@ -43,7 +43,7 @@ Optimizando tu sitio web darás una mejor experiencia
             <div class="banner-txt">
                 <h1>Optimización de sitios web</h1>
                 <p class="semi-bold" align="justify">Optimizando el código de tu sitio web mejoraras el rendimiento de la misma, <br>ya que el sitio cargará mucho más rápido y así darás una buena experiencia<br> a tus usuarios.</p>
-                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="portafolio.html">Nuestro Portafolio</a>
+                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a>
             </div>
         </div>
     </section>
@@ -148,7 +148,7 @@ Optimizando tu sitio web darás una mejor experiencia
                                 <li>Mapa del sitio planeado para aumento de  usuarios, audiencias y objetivos.</li>
                                 <li>Estrategia creadas para plataformas de escritorio y móviles.</li>
                             </ul>
-                            <a href="ideu.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('ideu') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6">
@@ -161,11 +161,11 @@ Optimizando tu sitio web darás una mejor experiencia
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="tecnomusic.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('tecnomusic') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-12">
-                    <div><a href="portafolio.html" class="btn btn-fill full-width">Descubrir más</a></div>
+                    <div><a href="{{ route('portafolio') }}" class="btn btn-fill full-width">Descubrir más</a></div>
                 </div>
             </div>
         </div>
@@ -178,31 +178,6 @@ Optimizando tu sitio web darás una mejor experiencia
 
 @section('scripts')
     @parent
-
-    <script>
-        $(document).ready(function () {
-            var form = $('.emailform');
-
-            /*console.log(form.serialize());*/
-
-            form.submit(function(e) {
-                e.preventDefault();
-
-                $.ajax({
-                    url: "{{ route('contacto.store') }}",
-                    method: 'POST',
-                    data: form.serialize(),
-                    dataType: 'json',
-                    success: function(data) {
-                        alert('success');
-                    },
-                    error: function(data) {
-                        alert('error');
-                    }
-                });
-            });
-        });
-    </script>
     <script type=application/ld+json>
     {
     "@context":"http://www.schema.org",

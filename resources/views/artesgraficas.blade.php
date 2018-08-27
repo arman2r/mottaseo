@@ -43,7 +43,7 @@ Artes gráficas la mejor forma de comunicarte con tus clientes.
             <div class="banner-txt">
                 <h1>Artes Gráficas</h1>
                 <p class="semi-bold">Dale a tu empresa una nueva identidad visual corporativa en la cual<br> ponemos a tu disposición profesionales del diseño.</p>
-                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="portafolio.html">Nuestro Portafolio</a>
+                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a>
                  </div>
          </div>
     </section>

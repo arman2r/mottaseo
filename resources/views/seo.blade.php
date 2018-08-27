@@ -43,7 +43,7 @@ SEO Posicionamiento en motores de busqueda
             <div class="banner-txt">
                 <h1>Posicionamiento web.</h1>
                 <p class="semi-bold" align="justify">Conducir más tráfico a tu sitio web te ayudara  aumentar el rango en <br /> los diferentes motores de búsqueda.</p>
-                <div><a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="portafolio.html">Nuestro Portafolio</a> </div>
+                <div><a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a> </div>
             </div>
         </div>
     </section>
@@ -127,7 +127,7 @@ SEO Posicionamiento en motores de busqueda
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="sulicam.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('sulicam') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6">
@@ -140,11 +140,11 @@ SEO Posicionamiento en motores de busqueda
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="cuchiyuyo.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('cuchiyuyo') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-12">
-                    <div><a href="portafolio.html" class="btn btn-fill full-width">Descubrir más</a></div>
+                    <div><a href="{{ route('portafolio') }}" class="btn btn-fill full-width">Descubrir más</a></div>
                 </div>
             </div>
         </div>

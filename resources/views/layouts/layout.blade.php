@@ -138,7 +138,7 @@
                         <li><a href="{{ route('portafolio') }}">Portafolio</a></li>
                         <li><a href="{{ route('casosexito') }}">Casos de Éxitos</a></li>
                         <li><a href="{{ route('nosotros') }}">SEOGraphics</a></li>
-                        <li class="dropdown"><a href="" data-toggle="dropdown">Blog</a></li>
+                        <li class="dropdown"><a href="{{ route('blog') }}" data-toggle="dropdown">Blog</a></li>
                         <!--<li class="btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>-->
                         <li class="btn btn-fill"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>
                     </ul>
@@ -152,7 +152,7 @@
     </div>
     @section('footer')    
         <footer id="footer">
-            <a class="top-btn page-scroll" href="index.html#top"><span class="icon-chevron-up b-clor regular-text text-center"></span></a>
+            <a class="top-btn page-scroll" href="#top"><span class="icon-chevron-up b-clor regular-text text-center"></span></a>
             <div class="grey-dark-bg text-center">
                 <div class="container">
                     <h2>¡Suscríbete a nuestro boletín para mantenerte al día con las novedades tecnológicas!</h2>
@@ -194,7 +194,7 @@
                         <li>
                             <ul>
                                 <li>
-                                    <a href="index.html"><img src="images/small-logo.png" alt="SEO Graphics" class="img-responsive logo"></a>
+                                    <a href="{{ route('home') }}"><img src="images/small-logo.png" alt="SEO Graphics" class="img-responsive logo"></a>
                                 </li>
                                 <li>
                                     <p class="extra-small-text">&copy; 2018</p>
@@ -207,19 +207,19 @@
                         <li>
                             <ul>
                                 <li><a class="regular-text text-color-light">Servicios</a></li>
-                                <li><a href="artesgraficas.html" class="extra-small-text">Artes Gráficas</a></li>
-                                <li><a href="disenoweb.html" class="extra-small-text">Diseño web</a></li>
-                                <li><a href="optimiza.html" class="extra-small-text">Optimización web</a></li>
-                                <li><a href="seo.html" class="extra-small-text">Posicionaminto SEO </a></li>
-                                <li><a href="pagoxclic.html" class="extra-small-text">Pago por Clic</a></li>
-                                <li><a href="socialmedia.html" class="extra-small-text">Marketing de medios sociales</a></li>
+                                <li><a href="{{ route('artesgraficas') }}" class="extra-small-text">Artes Gráficas</a></li>
+                                <li><a href="{{ route('disenoweb') }}" class="extra-small-text">Diseño web</a></li>
+                                <li><a href="{{ route('optimizar') }}" class="extra-small-text">Optimización web</a></li>
+                                <li><a href="{{ route('seo') }}" class="extra-small-text">Posicionaminto SEO </a></li>
+                                <li><a href="{{ route('pagoxclic') }}" class="extra-small-text">Pago por Clic</a></li>
+                                <li><a href="{{ route('socialmedia') }}" class="extra-small-text">Marketing de medios sociales</a></li>
                             </ul>
                         </li>
                         <li>
                              <ul>
                                 <li><a class="regular-text text-color-light">Recursos</a></li>
-                                <li><a href="" class="extra-small-text">Portafolio</a></li>
-                                <li><a href="" class="extra-small-text">Casos de exito</a></li>
+                                <li><a href="{{ route('portafolio') }}" class="extra-small-text">Portafolio</a></li>
+                                <li><a href="{{ route('casosexito') }}" class="extra-small-text">Casos de exito</a></li>
                                 <li><a href="" class="extra-small-text">Noticias</a></li>
                             </ul>
                       </li>
@@ -227,9 +227,9 @@
                            
                             <ul>
                                 <li><a class="regular-text text-color-light">Soporte</a></li>
-                                <li><a href="contacto.html" class="extra-small-text">Contáctenos</a></li>
-                                <li><a href="politica.html" class="extra-small-text">Política de privacidad</a></li>
-                                <li><a href="terminosycondiciones.html" class="extra-small-text">Términos & condiciones</a></li>
+                                <li><a href="{{ route('contactenos') }}" class="extra-small-text">Contáctenos</a></li>
+                                <li><a href="{{ route('politicas') }}" class="extra-small-text">Política de privacidad</a></li>
+                                <li><a href="{{ route('terminosycondiciones') }}" class="extra-small-text">Términos & condiciones</a></li>
                             </ul>
                      </li>
                         <li class="big-width">

@@ -44,7 +44,7 @@
                             <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-2" id="slide-3046-layer-2" data-x="left" data-hoffset="0" data-y="center" data-voffset="140" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap;text-transform:left;">
                                 <div class="h2" style="color: #323a45;">de Servicios y productos incrementando tus ganancias.</div>
                                 <br>
-                                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="">Nuestro Portafolio</a> </div>
+                                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a> </div>
                         </li>
                         <li data-index="rs-3049" data-transition="zoomin" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-saveperformance="off" data-title="Love it?" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <img src="images/slider-2.jpg" alt="equipo código" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
@@ -59,7 +59,7 @@
                             <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-2" id="slide-3046-layer-15" data-x="left" data-hoffset="0" data-y="center" data-voffset="140" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap;text-transform:left;">
                                 <div class="h2" style="color: #323a45;">mejora el sitio web logrando así muchos más clientes.</div>
                                 <br>
-                                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="">Nuestro Portafolio</a> </div>
+                                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a> </div>
                         </li>
                     </ul>
                     <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
@@ -74,41 +74,33 @@
                     <div class="">
                         <div class="owl-carousel">
                            <div>
-                                <a href="index.html#"><img src="images/pc-expert.png" alt="pc.espert" class="img-responsive center-block" /></a>
+                                <a href="http://pcexpert-online.com/" target="_blank"><img src="images/pc-expert.png" alt="pc.espert" class="img-responsive center-block" /></a>
                             </div>
                             <div>
-                                <a href="index.html#"><img src="images/solumek.png" alt="Solumek" class="img-responsive center-block" /></a>
+                                <a href="http://tecnomusic.com.co/" target="_blank"><img src="images/tecnomusic.png" alt="tecnomusic" class="img-responsive center-block" /></a>
                             </div>
                             <div>
-                                <a href="index.html#"><img src="images/tecnomusic.png" alt="tecnomusic" class="img-responsive center-block" /></a>
-                            </div>
-
-                            <div>
-                                <a href="index.html#"><img src="images/vidrioacero.png" alt="vidrioacero" class="img-responsive center-block" /></a>
+                                <a href="http://www.pekaspizza.com/" target="_blank"><img src="images/pekaspizza.png" alt="pekas pizza" class="img-responsive center-block" /></a>
                             </div>
 
                             <div>
-                                <a href="index.html#"><img src="images/pekaspizza.png" alt="pekas pizza" class="img-responsive center-block" /></a>
+                                <a href="https://www.infihuila.gov.co/" target="_blank"><img src="images/infihuila.png" alt="Infihuila" class="img-responsive center-block" /></a>
                             </div>
 
                             <div>
-                                <a href="index.html#"><img src="images/infihuila.png" alt="Infihuila" class="img-responsive center-block" /></a>
+                                <a href="http://autocintaspitalito.com/" target="_blank"><img src="images/autocintas.png" alt="Autocintas" class="img-responsive center-block" /></a>
                             </div>
 
                             <div>
-                                <a href="index.html#"><img src="images/autocintas.png" alt="Autocintas" class="img-responsive center-block" /></a>
+                                <a href="http://sulicam.com/" target="_blank"><img src="images/sulicam.png" alt="sulicam" class="img-responsive center-block" /></a>
                             </div>
 
                             <div>
-                                <a href="index.html#"><img src="images/sulicam.png" alt="sulicam" class="img-responsive center-block" /></a>
+                                <a href="http://amarresydominios.mx/" target="_blank"><img src="images/amarres.png" alt="amarres" class="img-responsive center-block" /></a>
                             </div>
 
                             <div>
-                                <a href="index.html#"><img src="images/amarres.png" alt="amarres" class="img-responsive center-block" /></a>
-                            </div>
-
-                            <div>
-                                <a href="index.html#"><img src="images/cuchiyuyo.png" alt="coramcuchiyuyo" class="img-responsive center-block" /></a>
+                                <a href="http://coramcuchiyuyo.com/" target="_blank"><img src="images/cuchiyuyo.png" alt="coramcuchiyuyo" class="img-responsive center-block" /></a>
                             </div>
                         </div>
                     </div>
@@ -122,21 +114,21 @@
             <hr class="dark-line" />
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="box-green-border"> <a href="artesgraficas.html"><span  class="icon-pencil"></span>
+                    <div class="box-green-border"> <a href="{{ route('artesgraficas') }}"><span  class="icon-pencil"></span>
                      <div>Artes Gráficas</div><br>
                             </a>
                         <p align="justify">Nuestros expertos hacen estudios previos de mercado hasta encontrar el mejor diseño en cada pieza gráfica, brindando una presentación impecable de tu empresa, así llegarás con una buena imagen corporativa, dinámica y de gran atracción para los nuevos clientes que buscan tus productos y servicios.</p>
                     </div>
                 </div>
                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="box-green-border"> <a href="disenoweb.html"><span class="icon-laptop-phone"></span>
+                    <div class="box-green-border"> <a href="{{ route('disenoweb') }}"><span class="icon-laptop-phone"></span>
                         <div>Diseño Web</div><br>
                             </a>
                         <p align="justify">Después de un estudio de Ideas y posibilidades nos disponemos a crear un sitio adecuado, dinámico y con gran aceptación para los usuarios que están buscando los productos y servicios que ofreces, de esta forma se convertirán en nuevos clientes y lograremos así el crecimiento de tu empresa.</p><br>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="box-green-border"> <a href="optimiza.html"><span class="icon-puzzle"></span>
+                    <div class="box-green-border"> <a href="{{ route('optimizar') }}"><span class="icon-puzzle"></span>
                                 <div>Optimización Web</div><br>
                             </a>
                         <p align="justify">Cuando hablamos de sitios web que demoran a la hora de su carga y además no sé adaptan a todos los dispositivos tecnológicos, esto nos indica que es hora de hacer nuestro trabajo, el cual consiste en mejorar la carga y adaptación de un sitio en toda su estructura, esto no quiere decir que haremos un nuevo sitio web.</p>
@@ -146,21 +138,21 @@
             </div>
             <div class="row margin-top-15">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="box-green-border"> <a href="seo.html"><span class="icon-magnifier"></span>
+                    <div class="box-green-border"> <a href="{{ route('seo') }}"><span class="icon-magnifier"></span>
                                 <div>Posicionamiento Web (SEO)</div><br>
                             </a>
                         <p align="justify">El posicionamiento web o SEO es uno de los trabajos que requiere ser llevado por un profesional con experiencia en este campo, ya que se trata de posicionar un sitio web en los mejores lugares de  los motores de búsqueda, donde es necesario el uso de herramientas específicas y de medición para lograr contenido de atracción al usuario, de esta forma tendremos mejores ingresos.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="box-green-border"> <a href="pagoxclic.html"><span class="icon-select2"></span>
+                    <div class="box-green-border"> <a href="{{ route('pagoxclic') }}"><span class="icon-select2"></span>
                                 <div>Pago por Clic</div><br>
                             </a>
                         <p align="justify">Para lograr un mayor alcance de usuarios que estén navegando en Internet es bueno poder invertir en campañas de marketing, estas ayudarán a lograr un aumento de visitas en nuestro sitio, ya que las campañas de publicidad digital nos permiten tener presencia en muchas páginas de los socios estratégicos de empresas como Google, Bing, Facebook, Twitter, Instagram y Linkedin.</p>
                     </div>
                 </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="box-green-border"> <a href="socialmedia.html"><span class="icon-share"></span>
+                    <div class="box-green-border"> <a href="{{ route('socialmedia') }}"><span class="icon-share"></span>
                                 <div>Marketing de medios sociales</div>
                             </a>
                         <p align="justify">Sabemos de la importancia que tiene las redes sociales a la hora de interactuar con nuestros usuarios, por esta razón debemos tener una buena estrategia de marketing dirigida específicamente a brindar información de gran valor de cada producto y servicio de nuestra empresa, así  le daremos la confianza, garantía y seguridad al usuario que busca a la hora de hacer su compra.</p><br>

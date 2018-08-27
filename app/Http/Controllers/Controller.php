@@ -93,6 +93,11 @@ class Controller extends BaseController
         return view('cuchiyuyo');
     
     }
+    public function blog(){
+
+        return view('blog');
+    
+    }
 
     public function contactenos(){
 

@@ -44,7 +44,7 @@ Portafolio de trabajos echos a nuestros clientes
                 <h1>Portafolio</h1>
                 <p class="semi-bold">Usamos enfoques estratégicos para ofrecer a nuestros clientes servicios de alta calidad.
                      <br /> servicios que aseguran una satisfacción empresarial.</p>
-               <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="portafolio.html">Nuestro Portafolio</a> </div>
+               <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a> </div>
         </div>
     </section>
    <!--<section class="o-hidden bg-white featured-design-section mobile-app-featured">
@@ -858,31 +858,6 @@ Portafolio de trabajos echos a nuestros clientes
 
 @section('scripts')
     @parent
-
-    <script>
-        $(document).ready(function () {
-            var form = $('.emailform');
-
-            /*console.log(form.serialize());*/
-
-            form.submit(function(e) {
-                e.preventDefault();
-
-                $.ajax({
-                    url: "{{ route('contacto.store') }}",
-                    method: 'POST',
-                    data: form.serialize(),
-                    dataType: 'json',
-                    success: function(data) {
-                        alert('success');
-                    },
-                    error: function(data) {
-                        alert('error');
-                    }
-                });
-            });
-        });
-    </script>
     <script type=application/ld+json>
     {
     "@context":"http://www.schema.org",

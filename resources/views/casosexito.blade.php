@@ -44,7 +44,7 @@ Aquí encontraras los trabajos más destacados
                 <h1>Casos de Éxito</h1>
                 <p class="semi-bold">Descubre cómo ayudamos a nuestros clientes a crecer en su negocio en línea.
                  <br /> Te dará una idea de nuestras capacidades.</p>
-                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="portafolio.html">Nuestro Portafolio</a> </div>
+                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a> </div>
         </div>
     </section>
   <section class="o-hidden case-studies-content long-box-wrapper" id="more-case-studies">
@@ -60,7 +60,7 @@ Aquí encontraras los trabajos más destacados
                                 <li>Mapa del sitio planeado para aumento de  usuarios, audiencias y objetivos.</li>
                                 <li>Estrategia creadas para plataformas de escritorio y móviles.</li>
                             </ul>
-                            <a href="ideu.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('ideu') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6">
@@ -73,7 +73,7 @@ Aquí encontraras los trabajos más destacados
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="tecnomusic.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('tecnomusic') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                <div class="col-xs-6 col-sm-6">
@@ -86,7 +86,7 @@ Aquí encontraras los trabajos más destacados
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="sulicam.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('sulicam') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6">
@@ -99,7 +99,7 @@ Aquí encontraras los trabajos más destacados
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="cuchiyuyo.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('cuchiyuyo') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6">
@@ -112,7 +112,7 @@ Aquí encontraras los trabajos más destacados
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="portafolio.html" class="medium-btn2 btn btn-fill proDetModal">VER DETALLES</a> </div>
+                            <a href="{{ route('portafolio') }}" class="medium-btn2 btn btn-fill proDetModal">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6">
@@ -125,7 +125,7 @@ Aquí encontraras los trabajos más destacados
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="portafolio.html" class="medium-btn2 btn btn-fill proDetModal">VIEW DETAILS</a> </div>
+                            <a href="{{ route('portafolio') }}" class="medium-btn2 btn btn-fill proDetModal">VIEW DETAILS</a> </div>
                     </div>
                 </div>
               <!--<div class="col-xs-12">

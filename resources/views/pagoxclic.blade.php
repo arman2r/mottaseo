@@ -55,7 +55,7 @@ Aumente el tráfico con las publicaciones de pago
                 <p class="semi-bold">Aumente el tráfico del sitio web rápidamente gracias a la publicidad de pago en motores
                  <br/>  de búsqueda.
                 </p>
-                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="portafolio.html">Nuestro Portafolio</a> </div>
+                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a> </div>
         </div>
     </section>
     <section class="bg-white o-hidden common-form-section  service-description-section">

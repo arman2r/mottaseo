@@ -45,7 +45,7 @@ Redes Sociales  la mejor forma de aumentar tu trafico
                 <h1>Sobre Nosotros</h1>
                 <p class="semi-bold">¿Qué hace a una agencia sea genial? Así de simple.
                  <br />Son las personas que trabajan aquí.</p>
-                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="portafolio.html">Nuestro Portafolio</a> </div>
+                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a> </div>
         </div>
     </section>
     <section class="bg-white o-hidden common-form-section contact-form-wrapper more-about" id="more-about">
@@ -79,31 +79,6 @@ Redes Sociales  la mejor forma de aumentar tu trafico
 
 @section('scripts')
     @parent
-
-    <script>
-        $(document).ready(function () {
-            var form = $('.emailform');
-
-            /*console.log(form.serialize());*/
-
-            form.submit(function(e) {
-                e.preventDefault();
-
-                $.ajax({
-                    url: "{{ route('contacto.store') }}",
-                    method: 'POST',
-                    data: form.serialize(),
-                    dataType: 'json',
-                    success: function(data) {
-                        alert('success');
-                    },
-                    error: function(data) {
-                        alert('error');
-                    }
-                });
-            });
-        });
-    </script>
     <script type=application/ld+json>
     {
     "@context":"http://www.schema.org",

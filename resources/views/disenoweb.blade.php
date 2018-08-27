@@ -43,7 +43,7 @@ SEOGraphics encontraras los mejores diseñadores web
            <div class="banner-txt">
                 <h1>Diseño de páginas web</h1>
                 <p class="semi-bold">Un buen  sitio web agrega grandes valores a tu negocio <br>desde la idea lo diseñamos todo.</p>
-                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="portafolio.html">Nuestro Portafolio</a>
+                <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a>
                  </div>
         </div>
     </section>

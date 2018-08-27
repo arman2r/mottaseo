@@ -121,7 +121,7 @@ objetivo de lograr la confluencia de esfuerzos de agricultore">
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="tecnomusic.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('tecnomusic') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6">
@@ -134,10 +134,10 @@ objetivo de lograr la confluencia de esfuerzos de agricultore">
                                 <li>Integración de herramientas de analítica y posicionamiento web.</li>
                                 <li>Diseño agradable, dinámico, adaptable y muy funcional.</li>
                             </ul>
-                            <a href="sulicam.html" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
+                            <a href="{{ route('sulicam') }}" class="medium-btn2 btn btn-fill">VER DETALLES</a> </div>
                     </div>
                 </div>
-                <div class="col-xs-12"> <a href="portafolio.html" class="btn btn-fill full-width">Descubrir más</a> </div>
+                <div class="col-xs-12"> <a href="{{ route('portafolio') }}" class="btn btn-fill full-width">Descubrir más</a> </div>
             </div>
         </div>
     </section>

@@ -36,6 +36,8 @@ Route::get('/casosexito', ['as' => 'casosexito', 'uses' => 'Controller@casosexit
 
 Route::get('/nosotros', ['as' => 'nosotros', 'uses' => 'Controller@nosotros']);
 
+Route::get('/blog', ['as' => 'blog', 'uses' => 'Controller@blog']);
+
 Route::get('/politicas', ['as' => 'politicas', 'uses' => 'Controller@politicas']);
 
 Route::get('/terminosycondiciones', ['as' => 'terminosycondiciones', 'uses' => 'Controller@terminosycondiciones']);
