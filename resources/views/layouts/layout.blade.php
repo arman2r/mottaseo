@@ -115,6 +115,28 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9R874L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="340410283168547"
+    theme_color="#13cf13"
+    logged_in_greeting="¡Hola!¿como podemos ayudarte?"
+    logged_out_greeting="¡Hola!¿como podemos ayudarte?">
+    </div>
     @section('header')
     <!--<div class="header-wrapper">-->
         <nav id="navbar-main" class="navbar main-menu">
@@ -244,6 +266,7 @@
                                         <li><a href=""><span class="icon-pinterest"></span></a></li>
                                         <li><a href=""><span class="icon-linkedin"></span></a></li>
                                     </ul>
+                                    <li><span class="icon-phone"></span> 319 2948824</li>
                                 </li>
                             </ul>
                         </li>
@@ -494,11 +517,12 @@
                     return
         }*/
                 else {
-                    $.ajax({
+                    $.ajax({                        
                         url: "{{ route('newsletter.store') }}",
                         method: 'POST',
+                        headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                         data: newsForm.serialize(),
-                        dataType: 'json',
+                        dataType: 'json',                        
                         success: function (msg) {
                             $(newsForm).find("input[type='text'], input[type='email']").val("").attr('disabled', true);
                             $(newsForm).append('<div class="alert alert-success" role="alert">Gracias por Suscribirte a nuestro canal :)</div>');
