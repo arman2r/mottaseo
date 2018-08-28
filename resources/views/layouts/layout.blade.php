@@ -388,6 +388,12 @@
         $(document).ready(function () {
             
             var form = $('.formContact');
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
             
             //console.log(form);
 
@@ -493,6 +499,12 @@
 
             var newsForm = $('#newsletterform');
 
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
             newsForm.submit(function(e) {
                 e.preventDefault();
 
@@ -516,10 +528,10 @@
                     return
         }*/
                 else {
-                    $.ajax({                        
+                    $.ajax({           
+                        cache: false,                                  
                         url: "{{ route('newsletter.store') }}",
-                        method: 'POST',
-                        headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                        method: 'POST',                        
                         data: newsForm.serialize(),
                         dataType: 'json',                        
                         success: function (msg) {

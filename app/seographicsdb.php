@@ -5,6 +5,6 @@ namespace seoGraphic;
 use Illuminate\Database\Eloquent\Model;
 
 class seographicsdb extends Model
-{
-    protected $table = 'usernews';
+{    
+    protected $fillable = ['namel','email'];
 }
