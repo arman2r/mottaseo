@@ -200,7 +200,7 @@
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div>
                                         <!--<input class="btn btn-fill full-width" type="submit" value="REGISTRATE GRATIS!" />-->
-                                        {!!Form::submit('REGISTRATE GRATIS!', array('class' => 'btn btn-fill full-width btnsendemail')) !!}
+                                        {!!Form::submit('REGISTRATE GRATIS!', array('class' => 'btn btn-fill full-width btnsendemail', 'name'=>'button_action')) !!}
                                     </div>
                                 </div>
                             </div>
@@ -435,10 +435,10 @@
                                 $(form).find("input[type='submit']").removeClass('disabled');
                                 $(form).find("input[type='text'], input[type='tel'], input[type='email'], textarea").removeAttr('disabled');
                             }, 3000);
-
+                            
                         },
                         error: function (msg) {
-                            $(form).append('<div class="alert alert-danger" role="alert">Su mensaje no fue enviado, intente mas tarde.</div>')
+                            $(form).append('<div class="alert alert-danger" role="alert">Su mensaje no fue enviado, intente mas tarde.</div>');
                         }
                     });
                 }
@@ -535,16 +535,22 @@
                         data: newsForm.serialize(),
                         dataType: 'json',                        
                         success: function (msg) {
-                            $(newsForm).find("input[type='text'], input[type='email']").val("").attr('disabled', true);
-                            $(newsForm).append('<div class="alert alert-success" role="alert">Gracias por Suscribirte a nuestro canal :)</div>');
-                            setTimeout(function () {
-                                $(newsForm).children('.alert').remove();
-                                $(newsForm).find("input[type='submit']").removeClass('disabled');
-                                $(newsForm).find("input[type='text'], input[type='email']").removeAttr('disabled');
-                            }, 3000);
+                            if(msg.status == 'exito'){
+                                $(newsForm).find("input[type='text'], input[type='email']").val("").attr('disabled', true);
+                                $(newsForm).append('<div class="alert alert-success" role="alert">Gracias por Suscribirte a nuestro canal :)</div>');
+                                setTimeout(function () {
+                                    $(newsForm).children('.alert').remove();
+                                    $(newsForm).find("input[type='submit']").removeClass('disabled');
+                                    $(newsForm).find("input[type='text'], input[type='email']").removeAttr('disabled');
+                                }, 3000);
+                            }else {
+                                $(newsForm).append('<div class="alert alert-danger" role="alert">' + msg.msg + '</div>')
+                            }
+                            
 
                         },
                         error: function (msg) {
+                            //>$(form).append('<div class="alert alert-danger" role="alert">'+ $errors +'</div>');                            
                             $(newsForm).append('<div class="alert alert-danger" role="alert">Su mensaje no fue enviado, intente mas tarde.</div>')
                         }
                     });

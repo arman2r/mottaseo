@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class seographicsdb extends Model
 {    
-    protected $fillable = ['namel','email'];
+    protected $table = 'usernews';
+    protected $fillable = ['name','email'];
 }
