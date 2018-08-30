@@ -94,7 +94,7 @@ class newsletterController extends Controller
                 'email' => $request->email,
             ], function($mail) use($request) {
                 $mail->from($request->email);
-                $mail->to(['arman.2.r@gmail.com',$request->email])->subject('Nuevo Usuario Suscrit@');
+                $mail->to(['contactanos@seographics.com.co',$request->email])->subject('Nuevo Usuario Suscrit@');
             });
             $response = array(
                 'status' => 'exito',

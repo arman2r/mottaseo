@@ -38,7 +38,7 @@ SEOGraphics encontraras los mejores diseñadores web
 @endsection
 
 @section('content')
-<    <section class="blog-title">
+    <section class="blog-title">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
