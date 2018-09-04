@@ -27,8 +27,6 @@
     <meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
     <meta name="dc.Language" scheme="RFC1766" content="Spanish">
     <meta content=Spanish name=language/>
-    
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
     <meta charset="utf-8">
     <meta name="author" content="Crapas Mott">
     <meta name="REPLY-TO" content="contactanos@seographics.com.co">
@@ -37,6 +35,7 @@
     <meta name="robots" content="ALL">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+   
     
     <meta property=og:type content=website>
     
@@ -44,7 +43,7 @@
     <meta property="fb:app_id" content="470450446638168">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="https://twitter.com/seographics">
-    <meta name="twitter:creator" content="@mottastudy">
+    <meta name="twitter:creator" content="@seographics">
     <link rel="alternate" href="https://www.seographics.com.co/es-co" hreflang="es-co" />
     
     <link rel="alternate" hreflang="en" href="https://www.seographics.com.co" />
@@ -110,6 +109,21 @@
             font-size:12px !important;
             color:#1a252b !important;
         }
+
+        .sp-header {
+            position: fixed !important;
+            top:0px;
+            transition: all ease-out 0.5s;
+            -webkit-transition: all ease-out 0.5s;
+            width: 100%;
+            z-index: 9999 !important;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-top: 1px solid #e9eaed;
+            border-bottom: 1px solid #e9eaed;
+            height: inherit;
+            background-color:#fff
+        }
+        
     </style>
     @show
 </head>
@@ -139,6 +153,7 @@
     </div>
     @section('header')
     <!--<div class="header-wrapper">-->
+    <header>
         <nav id="navbar-main" class="navbar main-menu">
             <div class="container">
                 <div class="navbar-header">
@@ -160,13 +175,14 @@
                         <li><a href="{{ route('portafolio') }}">Portafolio</a></li>
                         <li><a href="{{ route('casosexito') }}">Casos de Éxitos</a></li>
                         <li><a href="{{ route('nosotros') }}">SEOGraphics</a></li>
-                        <li class="dropdown"><a href="" data-toggle="dropdown">Blog</a></li>
+                        
                         <!--<li class="btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>-->
                         <li class="btn btn-fill"><a href="{{ route('contactenos') }}">Contáctenos<span class="icon-chevron-right"></span></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+    </header>
     <!--</div>-->
     @show
     <div class="row">
@@ -252,6 +268,8 @@
                                 <li><a href="{{ route('contactenos') }}" class="extra-small-text">Contáctenos</a></li>
                                 <li><a href="{{ route('politicas') }}" class="extra-small-text">Política de privacidad</a></li>
                                 <li><a href="{{ route('terminosycondiciones') }}" class="extra-small-text">Términos & condiciones</a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=573192948824" class="extra-small-text" target="_blank">Nuestro WhatsApp</a></li>
+                                <li><span class="icon-phone"></span> 319 2948824</li>
                             </ul>
                      </li>
                         <li class="big-width">
@@ -265,7 +283,7 @@
                                         <li><a href="https://www.instagram.com/seographics/" target="_blank" ><span class="icon-instagram"></span></a></li>
                                         <li><a href="https://www.linkedin.com/company/seographics/" target="_blank"><span class="icon-linkedin"></span></a></li>
                                     </ul>
-                                    <li><span class="icon-phone"></span> 319 2948824</li>
+                                    
                                 </li>
                             </ul>
                         </li>
@@ -386,7 +404,30 @@
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
         <script>
         $(document).ready(function () {
+
+            /*** fixed header  ***/
+            /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+            var prevScrollpos = window.pageYOffset;
+            var heightNav = $('header').height();
             
+            //console.log(heightNav);
+            window.onscroll = function() {
+                console.log(window.scroll);
+                if($(window).scrollTop() >= heightNav){                    
+                    $('#navbar-main').addClass('sp-header');
+                } else {
+                    $('#navbar-main').removeClass('sp-header');
+                }
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar-main").style.top = "0";                                                          
+                } else {
+                    document.getElementById("navbar-main").style.top = "-110px";                            
+                }
+                prevScrollpos = currentScrollPos;
+            }
+            /** cierra fixed header **/
+
             var form = $('.formContact');
 
             $.ajaxSetup({

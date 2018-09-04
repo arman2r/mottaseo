@@ -61,6 +61,11 @@ class Controller extends BaseController
         return view('nosotros');
     
     }
+    public function contactenos(){
+
+        return view('contactenos');
+    
+    }
     public function politicas(){
 
         return view('politicas');

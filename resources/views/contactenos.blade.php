@@ -30,11 +30,12 @@
         <div class="container">
             <div class="banner-txt">
                 <h1>Contáctanos ahora</h1>
-                <p class="semi-bold">Ponte en contacto con nosotros y te ayudaremos <br />hacer crecer Tu negocio en línea.</p>
+                <h3 class="semi-bold">Y te ayudaremos a hacer crecer tu negocio en línea.</h3>
             </div>
         </div>
     </section>
     <section class="bg-white o-hidden common-form-section contact-form-wrapper">
+
         <div class="container">
             <h2 class="b-clor">Dinos en que podemos ayudarte.</h2>
             <hr class="dark-line" />

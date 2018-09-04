@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-    agencia de nuevas ideas para crecer
+  SEOGRAPHICS agencia de nuevas ideas para crecer
 @endsection
 
 @section('head')
@@ -35,14 +35,14 @@
                             <img src="images/slider-1a.jpg" alt="oficina" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                             <div class="visible-xs caption-mobile">
                                 <div class="h1" style="color: #90c404;">Un buen sitio web es la mejor presentación</div>
-                                <div class="h2" style="color: #323a45;">de Servicios y productos incrementando tus ganancias.</div>
+                                <div class="h2" style="color: #323a45;">de productos y servicios incrementando tus ganancias.</div>
                             </div>
                             <div class="tp-caption NotGeneric-Title  tp-resizeme rs-parallaxlevel-3" id="slide-3046-layer-5" data-x="left" data-hoffset="0" data-y="center" data-voffset="0" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[60]" data-fontsize="[90,56,40,30]" data-paddingleft="[0,50,50,50]" style="z-index: 9; white-space: nowrap;text-transform:left;">
                                 <div class="h1" style="color: #90c404;">Un buen sitio web
                                     <br>es la mejor presentación</div>
                             </div>
                             <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-2" id="slide-3046-layer-2" data-x="left" data-hoffset="0" data-y="center" data-voffset="140" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap;text-transform:left;">
-                                <div class="h2" style="color: #323a45;">de Servicios y productos incrementando tus ganancias.</div>
+                                <div class="h2" style="color: #323a45;">de productos y servicios incrementando tus ganancias.</div>
                                 <br>
                                 <a href="index.html#" class="medium-btn btn btn-fill" data-toggle="modal" data-target="#getAQuoteModal">¿Te cotizamos? <span class="icon-chevron-right"></span></a> <a class="medium-btn2 btn btn-nofill page-scroll" href="{{ route('portafolio') }}">Nuestro Portafolio</a> </div>
                         </li>
@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="">
-                        <div class="owl-carousel">
+                        <div class="owl-carousel home">
                            <div>
                                 <a href="http://pcexpert-online.com/" target="_blank"><img src="images/pc-expert.png" alt="pc.espert" class="img-responsive center-block" /></a>
                             </div>

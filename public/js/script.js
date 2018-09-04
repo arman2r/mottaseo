@@ -132,9 +132,10 @@ $(function() {
     //end script for parallex
 
     //script for owl carousel 
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel.home').owlCarousel({
         loop: true,
         margin: 13,
+        autoPlay: true,
         responsiveClass: true,
         responsive: {
             0: {
@@ -150,7 +151,7 @@ $(function() {
             },
             1100: {
                 items: 6,
-                loop: true
+                loop: true                
             }
         }
     });
